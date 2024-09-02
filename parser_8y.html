@@ -1,0 +1,1119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/bison/parser.y</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('parser_8y.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo parser.y</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Archivo de entrada para <code>bison</code>.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;bison.h&quot;</code><br />
+</div>
+<p><a href="parser_8y_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a7fcbda37cebaf3264b3a91ff6a331db4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a7fcbda37cebaf3264b3a91ff6a331db4">if</a> ($[stmt] &amp;&amp;!g_scope)</td></tr>
+<tr class="separator:a7fcbda37cebaf3264b3a91ff6a331db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c316a18fcffece0a8ec75b54904ac5e"><td class="memItemLeft" align="right" valign="top"><a id="a0c316a18fcffece0a8ec75b54904ac5e" name="a0c316a18fcffece0a8ec75b54904ac5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CHECK_EXIT</b> ($$)</td></tr>
+<tr class="separator:a0c316a18fcffece0a8ec75b54904ac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66764ea80da0024f2869313d580f13e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a66764ea80da0024f2869313d580f13e5">repl_prompt</a> ()</td></tr>
+<tr class="separator:a66764ea80da0024f2869313d580f13e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d3d221b09eb7160a191bc688ebf1d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#aa6d3d221b09eb7160a191bc688ebf1d5">if</a> (g_scope &gt; 0)</td></tr>
+<tr class="separator:aa6d3d221b09eb7160a191bc688ebf1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e112e652864f39bed4045d1c5f4e90"><td class="memItemLeft" align="right" valign="top"><a id="aa6e112e652864f39bed4045d1c5f4e90" name="aa6e112e652864f39bed4045d1c5f4e90"></a>
+assign&#160;</td><td class="memItemRight" valign="bottom"><b>ast_reverse_ll</b> ($3))</td></tr>
+<tr class="separator:aa6e112e652864f39bed4045d1c5f4e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38cb15bba5f58a03c2b158e0e7c0080"><td class="memItemLeft" align="right" valign="top"><a id="af38cb15bba5f58a03c2b158e0e7c0080" name="af38cb15bba5f58a03c2b158e0e7c0080"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yyerror</b> (msg)</td></tr>
+<tr class="separator:af38cb15bba5f58a03c2b158e0e7c0080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e71a58e8672a21cf83ecbb1ad932772"><td class="memItemLeft" align="right" valign="top"><a id="a6e71a58e8672a21cf83ecbb1ad932772" name="a6e71a58e8672a21cf83ecbb1ad932772"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>free</b> (msg)</td></tr>
+<tr class="separator:a6e71a58e8672a21cf83ecbb1ad932772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4b4eb847520ff4e45de16db801e26133"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a4b4eb847520ff4e45de16db801e26133">require</a></td></tr>
+<tr class="separator:a4b4eb847520ff4e45de16db801e26133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70dbe4fdbaa29899163ca0fc7a7dbbe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a70dbe4fdbaa29899163ca0fc7a7dbbe6">g_scope</a> = 0</td></tr>
+<tr class="separator:a70dbe4fdbaa29899163ca0fc7a7dbbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322cd1f3bc579c92093ad96785b0944b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a322cd1f3bc579c92093ad96785b0944b">g_loops</a> = 0</td></tr>
+<tr class="separator:a322cd1f3bc579c92093ad96785b0944b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9218675ce61764f0271e5764ae078f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#af9218675ce61764f0271e5764ae078f8">g_fns</a> = 0</td></tr>
+<tr class="separator:af9218675ce61764f0271e5764ae078f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdd86ff4a0c7cc616571b3e39511c9f"><td class="memItemLeft" align="right" valign="top">locations define api location&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#abcdd86ff4a0c7cc616571b3e39511c9f">type</a></td></tr>
+<tr class="separator:abcdd86ff4a0c7cc616571b3e39511c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3dc87f408db3e467f7b55863974c3b"><td class="memItemLeft" align="right" valign="top">stmt_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#aba3dc87f408db3e467f7b55863974c3b">__pad0__</a></td></tr>
+<tr class="separator:aba3dc87f408db3e467f7b55863974c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d985d51492895a4e75c85a92f40b1de"><td class="memItemLeft" align="right" valign="top">stmt_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a0d985d51492895a4e75c85a92f40b1de">$1</a></td></tr>
+<tr class="separator:a0d985d51492895a4e75c85a92f40b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119c3bd7b028928104ef9f17706e9e23"><td class="memItemLeft" align="right" valign="top">else&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a119c3bd7b028928104ef9f17706e9e23">$$</a> = ast_new_ll_n($[stmt], @[stmt])</td></tr>
+<tr class="separator:a119c3bd7b028928104ef9f17706e9e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affadbb7b38bfc8e5295bbe3fe433a3d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#affadbb7b38bfc8e5295bbe3fe433a3d2">stmt</a></td></tr>
+<tr class="separator:affadbb7b38bfc8e5295bbe3fe433a3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10dacfa214e2575bb2e0ee407c242e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#af10dacfa214e2575bb2e0ee407c242e0">error</a> { $$ = NULL</td></tr>
+<tr class="separator:af10dacfa214e2575bb2e0ee407c242e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b2118d5b562c011bf247592fba1574"><td class="memItemLeft" align="right" valign="top">eos&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a89b2118d5b562c011bf247592fba1574">__pad1__</a></td></tr>
+<tr class="separator:a89b2118d5b562c011bf247592fba1574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cabeb78ebcdbda9d1cd4fe520285ef1"><td class="memItemLeft" align="right" valign="top">stmt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a4cabeb78ebcdbda9d1cd4fe520285ef1">__pad2__</a> { yyerrok</td></tr>
+<tr class="separator:a4cabeb78ebcdbda9d1cd4fe520285ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb0f8efa04e1222e8580e6d4140370e"><td class="memItemLeft" align="right" valign="top">decl assign del insert if for while fn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#accb0f8efa04e1222e8580e6d4140370e">expr</a> { $$ = ast_new_exprst($1)</td></tr>
+<tr class="separator:accb0f8efa04e1222e8580e6d4140370e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6733eb5f605d09eaede9845835d71c4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a6733eb5f605d09eaede9845835d71c4e">exit</a> { $$ = ast_new_exit()</td></tr>
+<tr class="separator:a6733eb5f605d09eaede9845835d71c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cf6fbebedd86150a36e5ac3d5d3bfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a91cf6fbebedd86150a36e5ac3d5d3bfc">break</a></td></tr>
+<tr class="separator:a91cf6fbebedd86150a36e5ac3d5d3bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59edd4eaef7e5fb5df4d5e20414a891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#af59edd4eaef7e5fb5df4d5e20414a891">continue</a></td></tr>
+<tr class="separator:af59edd4eaef7e5fb5df4d5e20414a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9717e7bbecb906637e86cef6da3d83c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a9717e7bbecb906637e86cef6da3d83c2">return</a></td></tr>
+<tr class="separator:a9717e7bbecb906637e86cef6da3d83c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16c2c1e1cc7f9f8a1ba564dd3414364"><td class="memItemLeft" align="right" valign="top">block&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#ae16c2c1e1cc7f9f8a1ba564dd3414364">__pad3__</a></td></tr>
+<tr class="separator:ae16c2c1e1cc7f9f8a1ba564dd3414364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a00ea7761602c5282327968105532b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a54a00ea7761602c5282327968105532b">stmt_list</a> { g_scope--</td></tr>
+<tr class="separator:a54a00ea7761602c5282327968105532b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa32a2c9ae191d82030fc2885ae851b"><td class="memItemLeft" align="right" valign="top">fn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a9fa32a2c9ae191d82030fc2885ae851b">__pad4__</a></td></tr>
+<tr class="separator:a9fa32a2c9ae191d82030fc2885ae851b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41000f175dc0115080e2a682cc06dbe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a41000f175dc0115080e2a682cc06dbe9">params</a> { g_scope--</td></tr>
+<tr class="separator:a41000f175dc0115080e2a682cc06dbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33561b46dcfefd090c28f5a0dcf79f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a33561b46dcfefd090c28f5a0dcf79f94">block</a></td></tr>
+<tr class="separator:a33561b46dcfefd090c28f5a0dcf79f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0909fcbacd010dad9ecededa3a2efe6d"><td class="memItemLeft" align="right" valign="top">params&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a0909fcbacd010dad9ecededa3a2efe6d">__pad5__</a></td></tr>
+<tr class="separator:a0909fcbacd010dad9ecededa3a2efe6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5110ee95cdf34f709d3a4f37e796f50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#ab5110ee95cdf34f709d3a4f37e796f50">id_list</a></td></tr>
+<tr class="separator:ab5110ee95cdf34f709d3a4f37e796f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d665d9fa18a26df451d111b34afd89f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a7d665d9fa18a26df451d111b34afd89f">empty</a> { $$ = NULL</td></tr>
+<tr class="separator:a7d665d9fa18a26df451d111b34afd89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b0ddb100996621acaeb5a65fcb8822"><td class="memItemLeft" align="right" valign="top">if&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a69b0ddb100996621acaeb5a65fcb8822">__pad6__</a></td></tr>
+<tr class="separator:a69b0ddb100996621acaeb5a65fcb8822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8116f4e865a954ee54082d5e39e1f7b1"><td class="memItemLeft" align="right" valign="top">if&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a8116f4e865a954ee54082d5e39e1f7b1">$3</a></td></tr>
+<tr class="separator:a8116f4e865a954ee54082d5e39e1f7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d4fa3ca7d0675f56615f363749bffc"><td class="memItemLeft" align="right" valign="top">if&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#ae2d4fa3ca7d0675f56615f363749bffc">$4</a></td></tr>
+<tr class="separator:ae2d4fa3ca7d0675f56615f363749bffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e622f70eee23c79865a09e661bce012"><td class="memItemLeft" align="right" valign="top">elif&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a5e622f70eee23c79865a09e661bce012">__pad7__</a></td></tr>
+<tr class="separator:a5e622f70eee23c79865a09e661bce012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975206de684017019fb6c76230aa4e3e"><td class="memItemLeft" align="right" valign="top">elif&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a975206de684017019fb6c76230aa4e3e">$</a> [block]</td></tr>
+<tr class="separator:a975206de684017019fb6c76230aa4e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da676d9cbfc24f1e71ce4bf1192b587"><td class="memItemLeft" align="right" valign="top">for&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a8da676d9cbfc24f1e71ce4bf1192b587">__pad8__</a></td></tr>
+<tr class="separator:a8da676d9cbfc24f1e71ce4bf1192b587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d197eacb79ef70846e2f9d75f52e46c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a3d197eacb79ef70846e2f9d75f52e46c">ID</a> { g_scope--</td></tr>
+<tr class="separator:a3d197eacb79ef70846e2f9d75f52e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc08c0b44fdb35472f0112848f13549c"><td class="memItemLeft" align="right" valign="top">while&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#abc08c0b44fdb35472f0112848f13549c">__pad9__</a></td></tr>
+<tr class="separator:abc08c0b44fdb35472f0112848f13549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d93c2877d47166396c99504c4b179c"><td class="memItemLeft" align="right" valign="top">decl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a98d93c2877d47166396c99504c4b179c">__pad10__</a></td></tr>
+<tr class="separator:a98d93c2877d47166396c99504c4b179c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399f01c2f35b09c5fd21ff4a3fa6c908"><td class="memItemLeft" align="right" valign="top">decl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a399f01c2f35b09c5fd21ff4a3fa6c908">NULL</a></td></tr>
+<tr class="separator:a399f01c2f35b09c5fd21ff4a3fa6c908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5620da4314caa372c7b47423e95848"><td class="memItemLeft" align="right" valign="top">assign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#aec5620da4314caa372c7b47423e95848">__pad11__</a></td></tr>
+<tr class="separator:aec5620da4314caa372c7b47423e95848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5ba397a971464a4ec71389a0899d66"><td class="memItemLeft" align="right" valign="top">assign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#afe5ba397a971464a4ec71389a0899d66">$2</a></td></tr>
+<tr class="separator:afe5ba397a971464a4ec71389a0899d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfeef4ef366f9a4b90cd7e0050d789e4"><td class="memItemLeft" align="right" valign="top">assignable_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#abfeef4ef366f9a4b90cd7e0050d789e4">__pad12__</a></td></tr>
+<tr class="separator:abfeef4ef366f9a4b90cd7e0050d789e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84639b254c1a19b5f31caa5283ddb47"><td class="memItemLeft" align="right" valign="top">assignable_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#ac84639b254c1a19b5f31caa5283ddb47">assignable</a></td></tr>
+<tr class="separator:ac84639b254c1a19b5f31caa5283ddb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611d956163c833764479b77939b37e8e"><td class="memItemLeft" align="right" valign="top">assignable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a611d956163c833764479b77939b37e8e">__pad13__</a></td></tr>
+<tr class="separator:a611d956163c833764479b77939b37e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd74b64996d87d9fcd388d9bcddcb39"><td class="memItemLeft" align="right" valign="top">insert&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a4fd74b64996d87d9fcd388d9bcddcb39">__pad14__</a></td></tr>
+<tr class="separator:a4fd74b64996d87d9fcd388d9bcddcb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d4e820edc0f233b1e742b4d4aad791"><td class="memItemLeft" align="right" valign="top">insert&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a96d4e820edc0f233b1e742b4d4aad791">$7</a></td></tr>
+<tr class="separator:a96d4e820edc0f233b1e742b4d4aad791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b21398f0c1471d9a20fd90bb788abeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a8b21398f0c1471d9a20fd90bb788abeb">primary</a> [' expr '!' '] =' expr { $$ = ast_new_insert($1, $3, 1, $7); }</td></tr>
+<tr class="separator:a8b21398f0c1471d9a20fd90bb788abeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfcc58ec2e6a4ee242e166c44d14e56"><td class="memItemLeft" align="right" valign="top">id_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a2dfcc58ec2e6a4ee242e166c44d14e56">__pad15__</a></td></tr>
+<tr class="separator:a2dfcc58ec2e6a4ee242e166c44d14e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1245446a2cc5a4ce31cd4e7a5ae6f7e0"><td class="memItemLeft" align="right" valign="top">expr_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a1245446a2cc5a4ce31cd4e7a5ae6f7e0">__pad16__</a></td></tr>
+<tr class="separator:a1245446a2cc5a4ce31cd4e7a5ae6f7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac4c4b83c22edfb95fc35a2ed5f52e5"><td class="memItemLeft" align="right" valign="top">assign_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#acac4c4b83c22edfb95fc35a2ed5f52e5">__pad17__</a></td></tr>
+<tr class="separator:acac4c4b83c22edfb95fc35a2ed5f52e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a0f35066079abd150539d0d13dbf3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a10a0f35066079abd150539d0d13dbf3e">msg</a> = <a class="el" href="str_8c.html#ac9c10e9c08989d43880387258a1fd904">str_concat</a>(msg, yysymbol_name(expected[i]))</td></tr>
+<tr class="separator:a10a0f35066079abd150539d0d13dbf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e111f6687f261e4e28bd6528e7f5b48"><td class="memItemLeft" align="right" valign="top">return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8y.html#a5e111f6687f261e4e28bd6528e7f5b48">res</a></td></tr>
+<tr class="separator:a5e111f6687f261e4e28bd6528e7f5b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Archivo de entrada para <code>bison</code>. </p>
+<p>Esta versión soluciona el problema de múltiples <code>stmt</code> en una línea. Ej: </p><pre class="fragment">if 1 {print(2); print(4)} fn F(n) { n + 1 }
+</pre> 
+<p class="definition">Definición en el archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a7fcbda37cebaf3264b3a91ff6a331db4" name="a7fcbda37cebaf3264b3a91ff6a331db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcbda37cebaf3264b3a91ff6a331db4">&#9670;&#160;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ &amp;&amp;!</em>[stmt]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00129">129</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a66764ea80da0024f2869313d580f13e5" name="a66764ea80da0024f2869313d580f13e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66764ea80da0024f2869313d580f13e5">&#9670;&#160;</a></span>repl_prompt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">repl_prompt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="log_8c_source.html#l00109">109</a> del archivo <a class="el" href="log_8c_source.html">log.c</a>.</p>
+
+</div>
+</div>
+<a id="aa6d3d221b09eb7160a191bc688ebf1d5" name="aa6d3d221b09eb7160a191bc688ebf1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d3d221b09eb7160a191bc688ebf1d5">&#9670;&#160;</a></span>if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">g_scope&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00215">215</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a4b4eb847520ff4e45de16db801e26133" name="a4b4eb847520ff4e45de16db801e26133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4eb847520ff4e45de16db801e26133">&#9670;&#160;</a></span>require</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">require</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"><span class="preprocessor"># 18 &quot;/home/runner/work/Aleph/Aleph/src/bison/parser.y&quot;</span> 2</div>
+<div class="line">  YYLTYPE g_prev_loc</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00010">10</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a70dbe4fdbaa29899163ca0fc7a7dbbe6" name="a70dbe4fdbaa29899163ca0fc7a7dbbe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70dbe4fdbaa29899163ca0fc7a7dbbe6">&#9670;&#160;</a></span>g_scope</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g_scope = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00020">20</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a322cd1f3bc579c92093ad96785b0944b" name="a322cd1f3bc579c92093ad96785b0944b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322cd1f3bc579c92093ad96785b0944b">&#9670;&#160;</a></span>g_loops</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g_loops = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00021">21</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="af9218675ce61764f0271e5764ae078f8" name="af9218675ce61764f0271e5764ae078f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9218675ce61764f0271e5764ae078f8">&#9670;&#160;</a></span>g_fns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">g_fns = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00022">22</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="abcdd86ff4a0c7cc616571b3e39511c9f" name="abcdd86ff4a0c7cc616571b3e39511c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcdd86ff4a0c7cc616571b3e39511c9f">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">locations define api location type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00026">26</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="aba3dc87f408db3e467f7b55863974c3b" name="aba3dc87f408db3e467f7b55863974c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba3dc87f408db3e467f7b55863974c3b">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stmt_list __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00121">121</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a0d985d51492895a4e75c85a92f40b1de" name="a0d985d51492895a4e75c85a92f40b1de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d985d51492895a4e75c85a92f40b1de">&#9670;&#160;</a></span>$1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stmt_list $1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00125">125</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a119c3bd7b028928104ef9f17706e9e23" name="a119c3bd7b028928104ef9f17706e9e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119c3bd7b028928104ef9f17706e9e23">&#9670;&#160;</a></span>$$</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">else $$ = ast_new_ll_n($[stmt], @[stmt])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00126">126</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="affadbb7b38bfc8e5295bbe3fe433a3d2" name="affadbb7b38bfc8e5295bbe3fe433a3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affadbb7b38bfc8e5295bbe3fe433a3d2">&#9670;&#160;</a></span>stmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stmt_list error eos stmt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      </div>
+<div class="line">      $$ = ast_new_ll_n($[stmt], @[stmt])</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00136">136</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="af10dacfa214e2575bb2e0ee407c242e0" name="af10dacfa214e2575bb2e0ee407c242e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10dacfa214e2575bb2e0ee407c242e0">&#9670;&#160;</a></span>error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">error { $$ = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00159">159</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a89b2118d5b562c011bf247592fba1574" name="a89b2118d5b562c011bf247592fba1574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b2118d5b562c011bf247592fba1574">&#9670;&#160;</a></span>__pad1__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">eos __pad1__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00161">161</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a4cabeb78ebcdbda9d1cd4fe520285ef1" name="a4cabeb78ebcdbda9d1cd4fe520285ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cabeb78ebcdbda9d1cd4fe520285ef1">&#9670;&#160;</a></span>__pad2__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stmt __pad2__ { yyerrok</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00165">165</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="accb0f8efa04e1222e8580e6d4140370e" name="accb0f8efa04e1222e8580e6d4140370e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb0f8efa04e1222e8580e6d4140370e">&#9670;&#160;</a></span>expr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">expr_list expr { $$ = ast_new_exprst($1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00175">175</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a6733eb5f605d09eaede9845835d71c4e" name="a6733eb5f605d09eaede9845835d71c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6733eb5f605d09eaede9845835d71c4e">&#9670;&#160;</a></span>exit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exit { $$ = ast_new_exit()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00176">176</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a91cf6fbebedd86150a36e5ac3d5d3bfc" name="a91cf6fbebedd86150a36e5ac3d5d3bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cf6fbebedd86150a36e5ac3d5d3bfc">&#9670;&#160;</a></span>break</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">break</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{ </div>
+<div class="line">      <span class="keywordflow">if</span>(g_loops &lt;= 0) {</div>
+<div class="line">        yyerror(<span class="stringliteral">&quot;&#39;break&#39; fuera de un ciclo.&quot;</span>);</div>
+<div class="line">        YYERROR;</div>
+<div class="line">      } <span class="keywordflow">else</span> $$ = ast_new_break()</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00177">177</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="af59edd4eaef7e5fb5df4d5e20414a891" name="af59edd4eaef7e5fb5df4d5e20414a891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59edd4eaef7e5fb5df4d5e20414a891">&#9670;&#160;</a></span>continue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">continue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      <span class="keywordflow">if</span>(g_loops &lt;= 0) {</div>
+<div class="line">        yyerror(<span class="stringliteral">&quot;&#39;continue&#39; fuera de un ciclo.&quot;</span>);</div>
+<div class="line">        YYERROR;</div>
+<div class="line">      } <span class="keywordflow">else</span> $$ = ast_new_continue()</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00183">183</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a9717e7bbecb906637e86cef6da3d83c2" name="a9717e7bbecb906637e86cef6da3d83c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9717e7bbecb906637e86cef6da3d83c2">&#9670;&#160;</a></span>return</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">return</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      <span class="keywordflow">if</span>(g_fns &lt;= 0) {</div>
+<div class="line">        yyerror(<span class="stringliteral">&quot;&#39;return&#39; fuera de una función.&quot;</span>);</div>
+<div class="line">        YYERROR;</div>
+<div class="line">      } <span class="keywordflow">else</span> $$ = $1</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00189">189</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="ae16c2c1e1cc7f9f8a1ba564dd3414364" name="ae16c2c1e1cc7f9f8a1ba564dd3414364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16c2c1e1cc7f9f8a1ba564dd3414364">&#9670;&#160;</a></span>__pad3__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">block __pad3__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00207">207</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a54a00ea7761602c5282327968105532b" name="a54a00ea7761602c5282327968105532b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a00ea7761602c5282327968105532b">&#9670;&#160;</a></span>stmt_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stmt_list { g_scope--</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00208">208</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a9fa32a2c9ae191d82030fc2885ae851b" name="a9fa32a2c9ae191d82030fc2885ae851b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa32a2c9ae191d82030fc2885ae851b">&#9670;&#160;</a></span>__pad4__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fn __pad4__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00212">212</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a41000f175dc0115080e2a682cc06dbe9" name="a41000f175dc0115080e2a682cc06dbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41000f175dc0115080e2a682cc06dbe9">&#9670;&#160;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params { g_scope--</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00213">213</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a33561b46dcfefd090c28f5a0dcf79f94" name="a33561b46dcfefd090c28f5a0dcf79f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33561b46dcfefd090c28f5a0dcf79f94">&#9670;&#160;</a></span>block</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">elif else block</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      g_fns--</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00213">213</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a0909fcbacd010dad9ecededa3a2efe6d" name="a0909fcbacd010dad9ecededa3a2efe6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0909fcbacd010dad9ecededa3a2efe6d">&#9670;&#160;</a></span>__pad5__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params __pad5__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00219">219</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="ab5110ee95cdf34f709d3a4f37e796f50" name="ab5110ee95cdf34f709d3a4f37e796f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5110ee95cdf34f709d3a4f37e796f50">&#9670;&#160;</a></span>id_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">let id_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=<span class="stringliteral">&#39; expr_list {</span></div>
+<div class="line"><span class="stringliteral">      $$ = ast_new_decl(ast_reverse_ll($2), ast_reverse_ll($4));</span></div>
+<div class="line"><span class="stringliteral">    }</span></div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00221">221</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a7d665d9fa18a26df451d111b34afd89f" name="a7d665d9fa18a26df451d111b34afd89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d665d9fa18a26df451d111b34afd89f">&#9670;&#160;</a></span>empty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">empty { $$ = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00226">226</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a69b0ddb100996621acaeb5a65fcb8822" name="a69b0ddb100996621acaeb5a65fcb8822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b0ddb100996621acaeb5a65fcb8822">&#9670;&#160;</a></span>__pad6__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if __pad6__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00228">228</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a8116f4e865a954ee54082d5e39e1f7b1" name="a8116f4e865a954ee54082d5e39e1f7b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8116f4e865a954ee54082d5e39e1f7b1">&#9670;&#160;</a></span>$3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if $3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00230">230</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="ae2d4fa3ca7d0675f56615f363749bffc" name="ae2d4fa3ca7d0675f56615f363749bffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d4fa3ca7d0675f56615f363749bffc">&#9670;&#160;</a></span>$4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">insert $4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00230">230</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a5e622f70eee23c79865a09e661bce012" name="a5e622f70eee23c79865a09e661bce012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e622f70eee23c79865a09e661bce012">&#9670;&#160;</a></span>__pad7__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">elif __pad7__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00233">233</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a975206de684017019fb6c76230aa4e3e" name="a975206de684017019fb6c76230aa4e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a975206de684017019fb6c76230aa4e3e">&#9670;&#160;</a></span>$</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">elif $[block]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00235">235</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a8da676d9cbfc24f1e71ce4bf1192b587" name="a8da676d9cbfc24f1e71ce4bf1192b587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da676d9cbfc24f1e71ce4bf1192b587">&#9670;&#160;</a></span>__pad8__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">for __pad8__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00240">240</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a3d197eacb79ef70846e2f9d75f52e46c" name="a3d197eacb79ef70846e2f9d75f52e46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d197eacb79ef70846e2f9d75f52e46c">&#9670;&#160;</a></span>ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">id_list ID { g_scope--</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00241">241</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="abc08c0b44fdb35472f0112848f13549c" name="abc08c0b44fdb35472f0112848f13549c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc08c0b44fdb35472f0112848f13549c">&#9670;&#160;</a></span>__pad9__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while __pad9__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00246">246</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a98d93c2877d47166396c99504c4b179c" name="a98d93c2877d47166396c99504c4b179c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d93c2877d47166396c99504c4b179c">&#9670;&#160;</a></span>__pad10__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">decl __pad10__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00252">252</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a399f01c2f35b09c5fd21ff4a3fa6c908" name="a399f01c2f35b09c5fd21ff4a3fa6c908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399f01c2f35b09c5fd21ff4a3fa6c908">&#9670;&#160;</a></span>NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">decl NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00253">253</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="aec5620da4314caa372c7b47423e95848" name="aec5620da4314caa372c7b47423e95848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5620da4314caa372c7b47423e95848">&#9670;&#160;</a></span>__pad11__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign __pad11__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00259">259</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="afe5ba397a971464a4ec71389a0899d66" name="afe5ba397a971464a4ec71389a0899d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5ba397a971464a4ec71389a0899d66">&#9670;&#160;</a></span>$2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign $2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00261">261</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="abfeef4ef366f9a4b90cd7e0050d789e4" name="abfeef4ef366f9a4b90cd7e0050d789e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfeef4ef366f9a4b90cd7e0050d789e4">&#9670;&#160;</a></span>__pad12__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignable_list __pad12__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00264">264</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="ac84639b254c1a19b5f31caa5283ddb47" name="ac84639b254c1a19b5f31caa5283ddb47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84639b254c1a19b5f31caa5283ddb47">&#9670;&#160;</a></span>assignable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      </div>
+<div class="line">      $$ = ast_add_next_ll_n(ast_new_ll_n($3, @3), $1)</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00265">265</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a611d956163c833764479b77939b37e8e" name="a611d956163c833764479b77939b37e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611d956163c833764479b77939b37e8e">&#9670;&#160;</a></span>__pad13__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignable __pad13__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00271">271</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a4fd74b64996d87d9fcd388d9bcddcb39" name="a4fd74b64996d87d9fcd388d9bcddcb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd74b64996d87d9fcd388d9bcddcb39">&#9670;&#160;</a></span>__pad14__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">insert __pad14__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00276">276</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a96d4e820edc0f233b1e742b4d4aad791" name="a96d4e820edc0f233b1e742b4d4aad791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d4e820edc0f233b1e742b4d4aad791">&#9670;&#160;</a></span>$7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">insert $7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00277">277</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a8b21398f0c1471d9a20fd90bb788abeb" name="a8b21398f0c1471d9a20fd90bb788abeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b21398f0c1471d9a20fd90bb788abeb">&#9670;&#160;</a></span>primary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">primary[' expr '!' '] =' expr { $$ = ast_new_insert($1, $3, 1, $7); }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00278">278</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a2dfcc58ec2e6a4ee242e166c44d14e56" name="a2dfcc58ec2e6a4ee242e166c44d14e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfcc58ec2e6a4ee242e166c44d14e56">&#9670;&#160;</a></span>__pad15__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">id_list __pad15__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00280">280</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a1245446a2cc5a4ce31cd4e7a5ae6f7e0" name="a1245446a2cc5a4ce31cd4e7a5ae6f7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1245446a2cc5a4ce31cd4e7a5ae6f7e0">&#9670;&#160;</a></span>__pad16__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">expr_list __pad16__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00287">287</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="acac4c4b83c22edfb95fc35a2ed5f52e5" name="acac4c4b83c22edfb95fc35a2ed5f52e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac4c4b83c22edfb95fc35a2ed5f52e5">&#9670;&#160;</a></span>__pad17__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_op __pad17__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00294">294</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a10a0f35066079abd150539d0d13dbf3e" name="a10a0f35066079abd150539d0d13dbf3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a0f35066079abd150539d0d13dbf3e">&#9670;&#160;</a></span>msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg = <a class="el" href="str_8c.html#ac9c10e9c08989d43880387258a1fd904">str_concat</a>(msg, yysymbol_name(expected[i]))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00424">424</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+<a id="a5e111f6687f261e4e28bd6528e7f5b48" name="a5e111f6687f261e4e28bd6528e7f5b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e111f6687f261e4e28bd6528e7f5b48">&#9670;&#160;</a></span>res</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">return res</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="parser_8y_source.html#l00432">432</a> del archivo <a class="el" href="parser_8y_source.html">parser.y</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7842804786b366cfaeb81c2443cad849.html">bison</a></li><li class="navelem"><a class="el" href="parser_8y.html">parser.y</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo main.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Archivo principal del intérprete de Aleph.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;getopt.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="sym_8h_source.html">eval/sym.h</a>&quot;</code><br />
+<code>#include &quot;global.h&quot;</code><br />
+<code>#include &quot;log.h&quot;</code><br />
+<code>#include &quot;graph.h&quot;</code><br />
+</div>
+<p><a href="main_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ae376779bbb41b976637c3b9940423416"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae376779bbb41b976637c3b9940423416">DO_NOT_EXIT</a>&#160;&#160;&#160;(-EXIT_FAILURE - EXIT_SUCCESS)</td></tr>
+<tr class="memdesc:ae376779bbb41b976637c3b9940423416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valor especial para indicar que el programa no debe salir.  <br /></td></tr>
+<tr class="separator:ae376779bbb41b976637c3b9940423416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a847a2de5c1c28c9d7055a2b89ed7dad7"><td class="memItemLeft" align="right" valign="top"><a id="a847a2de5c1c28c9d7055a2b89ed7dad7" name="a847a2de5c1c28c9d7055a2b89ed7dad7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>yyparse</b> (void)</td></tr>
+<tr class="memdesc:a847a2de5c1c28c9d7055a2b89ed7dad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal de Bison. <br /></td></tr>
+<tr class="separator:a847a2de5c1c28c9d7055a2b89ed7dad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402ea961bfc2ffeee61e3a7c330b1559"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a402ea961bfc2ffeee61e3a7c330b1559">print_help</a> (void)</td></tr>
+<tr class="memdesc:a402ea961bfc2ffeee61e3a7c330b1559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime el mensaje de ayuda.  <br /></td></tr>
+<tr class="separator:a402ea961bfc2ffeee61e3a7c330b1559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce4ce0a5ba4f9a3ee7b56f981647181"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3ce4ce0a5ba4f9a3ee7b56f981647181">args_parse</a> (int argc, char *argv[], bool *graph)</td></tr>
+<tr class="memdesc:a3ce4ce0a5ba4f9a3ee7b56f981647181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analiza los argumentos de la línea de comandos.  <br /></td></tr>
+<tr class="separator:a3ce4ce0a5ba4f9a3ee7b56f981647181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9338e40f7534be2d2aafb72d378b0eff"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a9338e40f7534be2d2aafb72d378b0eff">set_debug_mode</a> (char *debug_mode)</td></tr>
+<tr class="memdesc:a9338e40f7534be2d2aafb72d378b0eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece el modo de depuración.  <br /></td></tr>
+<tr class="separator:a9338e40f7534be2d2aafb72d378b0eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53975cf2a6bd7eeadc85bebac3cd9cd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae53975cf2a6bd7eeadc85bebac3cd9cd">setup_yyin</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:ae53975cf2a6bd7eeadc85bebac3cd9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura el archivo de entrada para el intérprete.  <br /></td></tr>
+<tr class="separator:ae53975cf2a6bd7eeadc85bebac3cd9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal del intérprete.  <br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab138aa8e11f58bcdcc7134adf240ea8c"><td class="memItemLeft" align="right" valign="top"><a id="ab138aa8e11f58bcdcc7134adf240ea8c" name="ab138aa8e11f58bcdcc7134adf240ea8c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>yydebug</b></td></tr>
+<tr class="memdesc:ab138aa8e11f58bcdcc7134adf240ea8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa mensajes para debugging de Bison. <br /></td></tr>
+<tr class="separator:ab138aa8e11f58bcdcc7134adf240ea8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea9e3b522e448ac462274fe70e1be82"><td class="memItemLeft" align="right" valign="top"><a id="a0ea9e3b522e448ac462274fe70e1be82" name="a0ea9e3b522e448ac462274fe70e1be82"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>yynerrs</b></td></tr>
+<tr class="memdesc:a0ea9e3b522e448ac462274fe70e1be82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cantidad de errores de sintaxis en Bison. <br /></td></tr>
+<tr class="separator:a0ea9e3b522e448ac462274fe70e1be82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46af646807e0797e72b6e8945e7ea88b"><td class="memItemLeft" align="right" valign="top"><a id="a46af646807e0797e72b6e8945e7ea88b" name="a46af646807e0797e72b6e8945e7ea88b"></a>
+FILE *&#160;</td><td class="memItemRight" valign="bottom"><b>yyin</b></td></tr>
+<tr class="memdesc:a46af646807e0797e72b6e8945e7ea88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Archivo de entrada de Flex. <br /></td></tr>
+<tr class="separator:a46af646807e0797e72b6e8945e7ea88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0843d6d86bcc6cb1491296b371d564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a4c0843d6d86bcc6cb1491296b371d564">g_exiting</a> = false</td></tr>
+<tr class="memdesc:a4c0843d6d86bcc6cb1491296b371d564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica que el intérprete está finalizando.  <br /></td></tr>
+<tr class="separator:a4c0843d6d86bcc6cb1491296b371d564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798b30fc2650cd1959051b0134a21b65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a798b30fc2650cd1959051b0134a21b65">g_repl</a> = true</td></tr>
+<tr class="memdesc:a798b30fc2650cd1959051b0134a21b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modo Read–Eval–Print Loop.  <br /></td></tr>
+<tr class="separator:a798b30fc2650cd1959051b0134a21b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be69784a8b5df32b2444322799db46f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3be69784a8b5df32b2444322799db46f">g_err_loc</a> = false</td></tr>
+<tr class="memdesc:a3be69784a8b5df32b2444322799db46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa la ubicación de los mensajes de error.  <br /></td></tr>
+<tr class="separator:a3be69784a8b5df32b2444322799db46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b0dacdd39e1148619bf7da43c5437c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a32b0dacdd39e1148619bf7da43c5437c">g_debug</a> = false</td></tr>
+<tr class="memdesc:a32b0dacdd39e1148619bf7da43c5437c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa los mensajes de la función 'print_dbg'.  <br /></td></tr>
+<tr class="separator:a32b0dacdd39e1148619bf7da43c5437c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2aed0cf38b7162f1e69e641a167d42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aab2aed0cf38b7162f1e69e641a167d42">g_color</a> = true</td></tr>
+<tr class="memdesc:aab2aed0cf38b7162f1e69e641a167d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa color en la salida.  <br /></td></tr>
+<tr class="separator:aab2aed0cf38b7162f1e69e641a167d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c773ccdff83f2c721ed08992f06aad8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a> = NULL</td></tr>
+<tr class="memdesc:a6c773ccdff83f2c721ed08992f06aad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre del archivo de entrada.  <br /></td></tr>
+<tr class="separator:a6c773ccdff83f2c721ed08992f06aad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32584c29f36551ff8f70da1527a6e948"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a32584c29f36551ff8f70da1527a6e948">g_sym_tab_size</a> = 9973</td></tr>
+<tr class="memdesc:a32584c29f36551ff8f70da1527a6e948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capacidad máxima de la tabla de símbolos.  <br /></td></tr>
+<tr class="separator:a32584c29f36551ff8f70da1527a6e948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e91dc965cef8a81b891068909d91b8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a41e91dc965cef8a81b891068909d91b8">g_max_stack_depth</a> = 100</td></tr>
+<tr class="memdesc:a41e91dc965cef8a81b891068909d91b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evita recursión infinita o demasiado larga.  <br /></td></tr>
+<tr class="separator:a41e91dc965cef8a81b891068909d91b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59a4876785be9fad8627f7af94673ac"><td class="memItemLeft" align="right" valign="top">AstNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa59a4876785be9fad8627f7af94673ac">g_ast</a> = NULL</td></tr>
+<tr class="memdesc:aa59a4876785be9fad8627f7af94673ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">AST resultante del análisis sintáctico.  <br /></td></tr>
+<tr class="separator:aa59a4876785be9fad8627f7af94673ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88cec006eb28b679b90c33e862072bc0"><td class="memItemLeft" align="right" valign="top">SymTab *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a88cec006eb28b679b90c33e862072bc0">g_symtab</a> = NULL</td></tr>
+<tr class="memdesc:a88cec006eb28b679b90c33e862072bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tabla de símbolos.  <br /></td></tr>
+<tr class="separator:a88cec006eb28b679b90c33e862072bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Archivo principal del intérprete de Aleph. </p>
+<p>Este archivo contiene el análisis de argumentos, la configuración y la ejecución del intérprete. </p>
+
+<p class="definition">Definición en el archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="ae376779bbb41b976637c3b9940423416" name="ae376779bbb41b976637c3b9940423416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376779bbb41b976637c3b9940423416">&#9670;&#160;</a></span>DO_NOT_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DO_NOT_EXIT&#160;&#160;&#160;(-EXIT_FAILURE - EXIT_SUCCESS)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valor especial para indicar que el programa no debe salir. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00019">19</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a402ea961bfc2ffeee61e3a7c330b1559" name="a402ea961bfc2ffeee61e3a7c330b1559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402ea961bfc2ffeee61e3a7c330b1559">&#9670;&#160;</a></span>print_help()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_help </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Imprime el mensaje de ayuda. </p>
+<p>Esta función imprime un mensaje de ayuda que explica el uso y las opciones del intérprete. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00127">127</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a3ce4ce0a5ba4f9a3ee7b56f981647181" name="a3ce4ce0a5ba4f9a3ee7b56f981647181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce4ce0a5ba4f9a3ee7b56f981647181">&#9670;&#160;</a></span>args_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int args_parse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>graph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Analiza los argumentos de la línea de comandos. </p>
+<p>Esta función procesa los argumentos de la línea de comandos pasados al intérprete.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Número de argumentos de la línea de comandos </td></tr>
+    <tr><td class="paramname">argv</td><td>Array de cadenas de argumentos de la línea de comandos </td></tr>
+    <tr><td class="paramname">graph</td><td>Puntero a una bandera booleana para la generación de gráficos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Código de salida o <code>DO_NOT_EXIT</code> si es exitoso </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00149">149</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a9338e40f7534be2d2aafb72d378b0eff" name="a9338e40f7534be2d2aafb72d378b0eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9338e40f7534be2d2aafb72d378b0eff">&#9670;&#160;</a></span>set_debug_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_debug_mode </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>debug_mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Establece el modo de depuración. </p>
+<p>Esta función establece el modo de depuración basado en el argumento proporcionado.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">debug_mode</td><td>El modo de depuración a establecer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Obsoleto:</a></b></dt><dd>Actualizar documentación </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00186">186</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="ae53975cf2a6bd7eeadc85bebac3cd9cd" name="ae53975cf2a6bd7eeadc85bebac3cd9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53975cf2a6bd7eeadc85bebac3cd9cd">&#9670;&#160;</a></span>setup_yyin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int setup_yyin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configura el archivo de entrada para el intérprete. </p>
+<p>Esta función configura el archivo de entrada (<code>yyin</code>) para el intérprete basado en los argumentos de la línea de comandos.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Número de argumentos de la línea de comandos </td></tr>
+    <tr><td class="paramname">argv</td><td>Array de cadenas de argumentos de la línea de comandos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Código de salida o <code>DO_NOT_EXIT</code> si es exitoso </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00199">199</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función principal del intérprete. </p>
+<p>Esta función inicializa el intérprete, analiza los argumentos de la línea de comandos, configura la tabla de símbolos y ejecuta el intérprete.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Número de argumentos de la línea de comandos </td></tr>
+    <tr><td class="paramname">argv</td><td>Array de cadenas de argumentos de la línea de comandos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Código de salida del programa </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00091">91</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a4c0843d6d86bcc6cb1491296b371d564" name="a4c0843d6d86bcc6cb1491296b371d564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0843d6d86bcc6cb1491296b371d564">&#9670;&#160;</a></span>g_exiting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g_exiting = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indica que el intérprete está finalizando. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00026">26</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a798b30fc2650cd1959051b0134a21b65" name="a798b30fc2650cd1959051b0134a21b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798b30fc2650cd1959051b0134a21b65">&#9670;&#160;</a></span>g_repl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g_repl = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modo Read–Eval–Print Loop. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00027">27</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a3be69784a8b5df32b2444322799db46f" name="a3be69784a8b5df32b2444322799db46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be69784a8b5df32b2444322799db46f">&#9670;&#160;</a></span>g_err_loc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g_err_loc = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activa la ubicación de los mensajes de error. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00028">28</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a32b0dacdd39e1148619bf7da43c5437c" name="a32b0dacdd39e1148619bf7da43c5437c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b0dacdd39e1148619bf7da43c5437c">&#9670;&#160;</a></span>g_debug</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g_debug = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activa los mensajes de la función 'print_dbg'. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00029">29</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="aab2aed0cf38b7162f1e69e641a167d42" name="aab2aed0cf38b7162f1e69e641a167d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2aed0cf38b7162f1e69e641a167d42">&#9670;&#160;</a></span>g_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g_color = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activa color en la salida. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00030">30</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a6c773ccdff83f2c721ed08992f06aad8" name="a6c773ccdff83f2c721ed08992f06aad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c773ccdff83f2c721ed08992f06aad8">&#9670;&#160;</a></span>g_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* g_filename = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre del archivo de entrada. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00031">31</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a32584c29f36551ff8f70da1527a6e948" name="a32584c29f36551ff8f70da1527a6e948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32584c29f36551ff8f70da1527a6e948">&#9670;&#160;</a></span>g_sym_tab_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t g_sym_tab_size = 9973</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capacidad máxima de la tabla de símbolos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00033">33</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a41e91dc965cef8a81b891068909d91b8" name="a41e91dc965cef8a81b891068909d91b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e91dc965cef8a81b891068909d91b8">&#9670;&#160;</a></span>g_max_stack_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t g_max_stack_depth = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evita recursión infinita o demasiado larga. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00034">34</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="aa59a4876785be9fad8627f7af94673ac" name="aa59a4876785be9fad8627f7af94673ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa59a4876785be9fad8627f7af94673ac">&#9670;&#160;</a></span>g_ast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AstNode* g_ast = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AST resultante del análisis sintáctico. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00036">36</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a88cec006eb28b679b90c33e862072bc0" name="a88cec006eb28b679b90c33e862072bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88cec006eb28b679b90c33e862072bc0">&#9670;&#160;</a></span>g_symtab</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SymTab* g_symtab = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tabla de símbolos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="main_8c_source.html#l00037">37</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

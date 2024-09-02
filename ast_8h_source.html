@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Fichero Fuente src/ast/ast.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('ast_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ast.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ast_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../bison/loc.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">   17</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> e_ast_node_t {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="comment">// AstDataN //////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea">   19</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea">INT_AST</a>, </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8">   20</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8">STR_AST</a>, </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9">   21</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9">SET_AST</a>, </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550">   22</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550">LST_AST</a>, </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="comment">// AstExprN //////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="comment">// left x right</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6">   25</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6">OR_AST</a>, </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846">   26</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846">AND_AST</a>, </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435">   27</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435">EQUAL_AST</a>, </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743">   28</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743">LESS_AST</a>, </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274">   29</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274">IN_AST</a>, </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8">   30</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8">ELEM_AST</a>, </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7">   31</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7">ADD_AST</a>, </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779">   32</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779">SUB_AST</a>, </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9">   33</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9">MUL_AST</a>, </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb">   34</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb">DIV_AST</a>, </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// id x expr</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7">   36</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7">CALL_AST</a>, </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// x expr</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1">   38</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1">NOT_AST</a>, </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d">   39</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d">NEG_AST</a>, </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5">   40</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5">LEN_AST</a>, </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="comment">// AstStmtN //////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219">   42</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219">EXPR_AST</a>, </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9">   43</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9">DECL_AST</a>, </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3">   44</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3">ASSIGN_AST</a>, </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e">   45</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e">INSERT_AST</a>, </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e">   46</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e">RETURN_AST</a>, </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7">   47</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7">DEL_AST</a>, </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2">   48</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2">BREAK_AST</a>, </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f">   49</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f">CONTINUE_AST</a>, </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764">   50</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764">EXIT_AST</a>, </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d">   51</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d">IF_AST</a>, </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9">   52</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9">WHILE_AST</a>, </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7">   53</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7">FOR_AST</a>, </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e">   54</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e">FN_AST</a>, </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// AstIdN ///////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755">   56</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755">ID_AST</a>, </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// AstIfnN ///////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c">   58</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c">IFN_AST</a>, </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// AstNode ///////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba">   60</a></span>  <a class="code hl_enumvalue" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba">AST_LL</a>, </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <a class="code hl_enumeration" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structs__ast__n.html">s_ast_n</a> AstNode;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structs__ast__n.html">   69</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structs__ast__n.html">s_ast_n</a> {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structs__ast__n.html#a2d173865d4b0ff02549335587dbf6171">   70</a></span>  <a class="code hl_enumeration" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a> <a class="code hl_variable" href="structs__ast__n.html#a2d173865d4b0ff02549335587dbf6171">type</a>; </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structs__ast__n.html#ad0760e12bc9e487195f8fd636171b0a1">   71</a></span>  YYLTYPE <a class="code hl_variable" href="structs__ast__n.html#ad0760e12bc9e487195f8fd636171b0a1">loc</a>; </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structs__ast__n.html#ab7a16b0228e4c021f3fea43a5a3626f8">   72</a></span>  AstNode *<a class="code hl_variable" href="structs__ast__n.html#ab7a16b0228e4c021f3fea43a5a3626f8">next</a>; </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structs__ast__n.html#a5d2ecf7fc5780a1ba42f0abe17330213">   73</a></span>  AstNode *<a class="code hl_variable" href="structs__ast__n.html#a5d2ecf7fc5780a1ba42f0abe17330213">data</a>; </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">char</span> *ast_enum_str(<a class="code hl_enumeration" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a> type);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">void</span> ast_free(AstNode *node);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>AstNode *<a class="code hl_function" href="ast_8h.html#a53e6e92ef475e94d5497bf8c5200c729">ast_new_ll_n</a>(AstNode *elem, YYLTYPE loc);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>AstNode *<a class="code hl_function" href="ast_8h.html#a8d624e05cc4750bef6e58f38dd042fcf">ast_add_next_ll_n</a>(AstNode *node_list, AstNode *elem);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>AstNode *<a class="code hl_function" href="ast_8h.html#afb18f0cbc894c4e3f9d07c4bf2d0272a">ast_get_last_ll_n</a>(AstNode *node_list);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>AstNode *<a class="code hl_function" href="ast_8h.html#a004557edee6a5852f70a0fe19395cd69">ast_reverse_ll</a>(AstNode *node_list);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>AstNode *<a class="code hl_function" href="ast_8h.html#a53b36c2527f9a2d52f151ee6a2d090df">ast_flatten_ll</a>(AstNode *ast_list);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keywordtype">bool</span> <a class="code hl_function" href="ast_8h.html#ab6f26c2f6b91e0f47e52fe04bea663c2">ast_is_ll</a>(AstNode *node);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keywordtype">bool</span> ast_is_data(AstNode *node);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keywordtype">bool</span> ast_is_expr(AstNode *node);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordtype">bool</span> ast_is_stmt(AstNode *node);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">bool</span> ast_is_sym(AstNode *node);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keywordtype">bool</span> ast_is_ifn(AstNode *node);</div>
+<div class="ttc" id="aast_8h_html_a004557edee6a5852f70a0fe19395cd69"><div class="ttname"><a href="ast_8h.html#a004557edee6a5852f70a0fe19395cd69">ast_reverse_ll</a></div><div class="ttdeci">AstNode * ast_reverse_ll(AstNode *node_list)</div><div class="ttdoc">Invierte el orden de una lista de nodos.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8c_source.html#l00173">ast.c:173</a></div></div>
+<div class="ttc" id="aast_8h_html_a53b36c2527f9a2d52f151ee6a2d090df"><div class="ttname"><a href="ast_8h.html#a53b36c2527f9a2d52f151ee6a2d090df">ast_flatten_ll</a></div><div class="ttdeci">AstNode * ast_flatten_ll(AstNode *ast_list)</div><div class="ttdoc">Extrae el elemento de sub-listas con un único elemento (devuelve una lista), eliminando anidamiento i...</div><div class="ttdef"><b>Definition:</b> <a href="ast_8c_source.html#l00198">ast.c:198</a></div></div>
+<div class="ttc" id="aast_8h_html_a53e6e92ef475e94d5497bf8c5200c729"><div class="ttname"><a href="ast_8h.html#a53e6e92ef475e94d5497bf8c5200c729">ast_new_ll_n</a></div><div class="ttdeci">AstNode * ast_new_ll_n(AstNode *elem, YYLTYPE loc)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8c_source.html#l00142">ast.c:142</a></div></div>
+<div class="ttc" id="aast_8h_html_a8d624e05cc4750bef6e58f38dd042fcf"><div class="ttname"><a href="ast_8h.html#a8d624e05cc4750bef6e58f38dd042fcf">ast_add_next_ll_n</a></div><div class="ttdeci">AstNode * ast_add_next_ll_n(AstNode *node_list, AstNode *elem)</div><div class="ttdoc">Enlazar elemento (puede ser un nodo de lista) a un nodo de lista.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8c_source.html#l00154">ast.c:154</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a></div><div class="ttdeci">AstNodeT</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00017">ast.h:17</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8">STR_AST</a></div><div class="ttdeci">@ STR_AST</div><div class="ttdoc">Nodo para átomos.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00020">ast.h:20</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755">ID_AST</a></div><div class="ttdeci">@ ID_AST</div><div class="ttdoc">Nodo para identificadores.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00056">ast.h:56</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3">ASSIGN_AST</a></div><div class="ttdeci">@ ASSIGN_AST</div><div class="ttdoc">Nodo para asignaciones.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00044">ast.h:44</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846">AND_AST</a></div><div class="ttdeci">@ AND_AST</div><div class="ttdoc">Nodo para and</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00026">ast.h:26</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea">INT_AST</a></div><div class="ttdeci">@ INT_AST</div><div class="ttdoc">Nodo para enteros.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00019">ast.h:19</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7">FOR_AST</a></div><div class="ttdeci">@ FOR_AST</div><div class="ttdoc">Nodo para for</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00053">ast.h:53</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219">EXPR_AST</a></div><div class="ttdeci">@ EXPR_AST</div><div class="ttdoc">Nodo para expresiones.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00042">ast.h:42</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8">ELEM_AST</a></div><div class="ttdeci">@ ELEM_AST</div><div class="ttdoc">Nodo para []</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00030">ast.h:30</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764">EXIT_AST</a></div><div class="ttdeci">@ EXIT_AST</div><div class="ttdoc">Nodo para exit</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00050">ast.h:50</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5">LEN_AST</a></div><div class="ttdeci">@ LEN_AST</div><div class="ttdoc">Nodo para len</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00040">ast.h:40</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550">LST_AST</a></div><div class="ttdeci">@ LST_AST</div><div class="ttdoc">Nodo para listas.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00022">ast.h:22</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7">CALL_AST</a></div><div class="ttdeci">@ CALL_AST</div><div class="ttdoc">Nodo para llamadas.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00036">ast.h:36</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2">BREAK_AST</a></div><div class="ttdeci">@ BREAK_AST</div><div class="ttdoc">Nodo para break</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00048">ast.h:48</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c">IFN_AST</a></div><div class="ttdeci">@ IFN_AST</div><div class="ttdoc">Nodo para in-built functions</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00058">ast.h:58</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7">DEL_AST</a></div><div class="ttdeci">@ DEL_AST</div><div class="ttdoc">Nodo para del</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00047">ast.h:47</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9">SET_AST</a></div><div class="ttdeci">@ SET_AST</div><div class="ttdoc">Nodo para conjuntos.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00021">ast.h:21</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779">SUB_AST</a></div><div class="ttdeci">@ SUB_AST</div><div class="ttdoc">Nodo para -</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00032">ast.h:32</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9">WHILE_AST</a></div><div class="ttdeci">@ WHILE_AST</div><div class="ttdoc">Nodo para while</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00052">ast.h:52</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f">CONTINUE_AST</a></div><div class="ttdeci">@ CONTINUE_AST</div><div class="ttdoc">Nodo para continue</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00049">ast.h:49</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743">LESS_AST</a></div><div class="ttdeci">@ LESS_AST</div><div class="ttdoc">Nodo para &lt;</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00028">ast.h:28</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9">MUL_AST</a></div><div class="ttdeci">@ MUL_AST</div><div class="ttdoc">Nodo para *</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00033">ast.h:33</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7">ADD_AST</a></div><div class="ttdeci">@ ADD_AST</div><div class="ttdoc">Nodo para +</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00031">ast.h:31</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba">AST_LL</a></div><div class="ttdeci">@ AST_LL</div><div class="ttdoc">Nodo para listas del AST.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00060">ast.h:60</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d">IF_AST</a></div><div class="ttdeci">@ IF_AST</div><div class="ttdoc">Nodo para if</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00051">ast.h:51</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e">RETURN_AST</a></div><div class="ttdeci">@ RETURN_AST</div><div class="ttdoc">Nodo para return</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00046">ast.h:46</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e">INSERT_AST</a></div><div class="ttdeci">@ INSERT_AST</div><div class="ttdoc">Nodo para inserción.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00045">ast.h:45</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6">OR_AST</a></div><div class="ttdeci">@ OR_AST</div><div class="ttdoc">Nodo para or</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00025">ast.h:25</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435">EQUAL_AST</a></div><div class="ttdeci">@ EQUAL_AST</div><div class="ttdoc">Nodo para ==</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00027">ast.h:27</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb">DIV_AST</a></div><div class="ttdeci">@ DIV_AST</div><div class="ttdoc">Nodo para /</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00034">ast.h:34</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1">NOT_AST</a></div><div class="ttdeci">@ NOT_AST</div><div class="ttdoc">Nodo para not</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00038">ast.h:38</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9">DECL_AST</a></div><div class="ttdeci">@ DECL_AST</div><div class="ttdoc">Nodo para declaraciones.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00043">ast.h:43</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d">NEG_AST</a></div><div class="ttdeci">@ NEG_AST</div><div class="ttdoc">Nodo para - (unario)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00039">ast.h:39</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274">IN_AST</a></div><div class="ttdeci">@ IN_AST</div><div class="ttdoc">Nodo para in</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00029">ast.h:29</a></div></div>
+<div class="ttc" id="aast_8h_html_a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e"><div class="ttname"><a href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e">FN_AST</a></div><div class="ttdeci">@ FN_AST</div><div class="ttdoc">Nodo para fn</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00054">ast.h:54</a></div></div>
+<div class="ttc" id="aast_8h_html_ab6f26c2f6b91e0f47e52fe04bea663c2"><div class="ttname"><a href="ast_8h.html#ab6f26c2f6b91e0f47e52fe04bea663c2">ast_is_ll</a></div><div class="ttdeci">bool ast_is_ll(AstNode *node)</div><div class="ttdoc">¿Es un nodo que puede enlazarse para formar listas?</div><div class="ttdef"><b>Definition:</b> <a href="ast_8c_source.html#l00112">ast.c:112</a></div></div>
+<div class="ttc" id="aast_8h_html_afb18f0cbc894c4e3f9d07c4bf2d0272a"><div class="ttname"><a href="ast_8h.html#afb18f0cbc894c4e3f9d07c4bf2d0272a">ast_get_last_ll_n</a></div><div class="ttdeci">AstNode * ast_get_last_ll_n(AstNode *node_list)</div><div class="ttdoc">Devuelve el último nodo de una lista de nodos.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8c_source.html#l00165">ast.c:165</a></div></div>
+<div class="ttc" id="astructs__ast__n_html"><div class="ttname"><a href="structs__ast__n.html">s_ast_n</a></div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00069">ast.h:69</a></div></div>
+<div class="ttc" id="astructs__ast__n_html_a2d173865d4b0ff02549335587dbf6171"><div class="ttname"><a href="structs__ast__n.html#a2d173865d4b0ff02549335587dbf6171">s_ast_n::type</a></div><div class="ttdeci">AstNodeT type</div><div class="ttdoc">Determina qué otros campos tiene el nodo.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00070">ast.h:70</a></div></div>
+<div class="ttc" id="astructs__ast__n_html_a5d2ecf7fc5780a1ba42f0abe17330213"><div class="ttname"><a href="structs__ast__n.html#a5d2ecf7fc5780a1ba42f0abe17330213">s_ast_n::data</a></div><div class="ttdeci">AstNode * data</div><div class="ttdoc">Contenido del nodo (si es AST_LL).</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00073">ast.h:73</a></div></div>
+<div class="ttc" id="astructs__ast__n_html_ab7a16b0228e4c021f3fea43a5a3626f8"><div class="ttname"><a href="structs__ast__n.html#ab7a16b0228e4c021f3fea43a5a3626f8">s_ast_n::next</a></div><div class="ttdeci">AstNode * next</div><div class="ttdoc">Siguiente nodo (si es AST_LL).</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00072">ast.h:72</a></div></div>
+<div class="ttc" id="astructs__ast__n_html_ad0760e12bc9e487195f8fd636171b0a1"><div class="ttname"><a href="structs__ast__n.html#ad0760e12bc9e487195f8fd636171b0a1">s_ast_n::loc</a></div><div class="ttdeci">YYLTYPE loc</div><div class="ttdoc">Ubicación en el código.</div><div class="ttdef"><b>Definition:</b> <a href="ast_8h_source.html#l00071">ast.h:71</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_203e5988f1ed315d29383d699972de6f.html">ast</a></li><li class="navelem"><a class="el" href="ast_8h.html">ast.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

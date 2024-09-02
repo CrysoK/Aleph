@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/eval/expr.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('eval_2expr_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo expr.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Declaraciones para la evaluación de expresiones.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;eval.h&quot;</code><br />
+</div>
+<p><a href="eval_2expr_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae475d6e7f725b42c5fa3feea38d2ea80"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#ae475d6e7f725b42c5fa3feea38d2ea80">eval_expr</a> (AstNode *node)</td></tr>
+<tr class="separator:ae475d6e7f725b42c5fa3feea38d2ea80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b777e030f831dc30fcf38abb5bebb2"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a24b777e030f831dc30fcf38abb5bebb2">eval_unary</a> (AstNode *node)</td></tr>
+<tr class="separator:a24b777e030f831dc30fcf38abb5bebb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552f449cf5e198d729bdb8bfe36c0c67"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a552f449cf5e198d729bdb8bfe36c0c67">eval_or</a> (AstNode *node)</td></tr>
+<tr class="separator:a552f449cf5e198d729bdb8bfe36c0c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476a9530801ab731e50d821740570787"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a476a9530801ab731e50d821740570787">eval_and</a> (AstNode *node)</td></tr>
+<tr class="separator:a476a9530801ab731e50d821740570787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada065b31601b17d24bb42066399a69c8"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#ada065b31601b17d24bb42066399a69c8">eval_equal</a> (AstNode *node)</td></tr>
+<tr class="separator:ada065b31601b17d24bb42066399a69c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3dd0870fe314ccec8dd5856c2bb020f"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#ad3dd0870fe314ccec8dd5856c2bb020f">eval_less</a> (AstNode *node)</td></tr>
+<tr class="separator:ad3dd0870fe314ccec8dd5856c2bb020f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c939f62b316dad8d199efea80b2a32"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a98c939f62b316dad8d199efea80b2a32">eval_in</a> (AstNode *node)</td></tr>
+<tr class="separator:a98c939f62b316dad8d199efea80b2a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca36bf9dc31c8c5a695a9473ef73e9ea"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#aca36bf9dc31c8c5a695a9473ef73e9ea">eval_elem</a> (AstNode *node)</td></tr>
+<tr class="separator:aca36bf9dc31c8c5a695a9473ef73e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569573111a87da59701259696019ed11"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a569573111a87da59701259696019ed11">eval_add</a> (AstNode *node)</td></tr>
+<tr class="separator:a569573111a87da59701259696019ed11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048d1e539f72aa3f5ceaa90f5ddde079"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a048d1e539f72aa3f5ceaa90f5ddde079">eval_sub</a> (AstNode *node)</td></tr>
+<tr class="separator:a048d1e539f72aa3f5ceaa90f5ddde079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a873a3224337011774ae420b6e19af4"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a1a873a3224337011774ae420b6e19af4">eval_mul</a> (AstNode *node)</td></tr>
+<tr class="separator:a1a873a3224337011774ae420b6e19af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22418a6a5820161b7795c75db6786498"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a22418a6a5820161b7795c75db6786498">eval_div</a> (AstNode *node)</td></tr>
+<tr class="separator:a22418a6a5820161b7795c75db6786498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a35edeb2072c2be3737341b6748259"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a38a35edeb2072c2be3737341b6748259">eval_fncall</a> (AstNode *node)</td></tr>
+<tr class="separator:a38a35edeb2072c2be3737341b6748259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf678b60b3d4311deb4c5cb77440129a"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#adf678b60b3d4311deb4c5cb77440129a">lst_new_concat</a> (ResNode *a, ResNode *b)</td></tr>
+<tr class="memdesc:adf678b60b3d4311deb4c5cb77440129a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatena dos listas en una nueva lista.  <br /></td></tr>
+<tr class="separator:adf678b60b3d4311deb4c5cb77440129a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2708fd1117214b40c3f5b53c237b4ad9"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a2708fd1117214b40c3f5b53c237b4ad9">lst_mod_concat</a> (ResNode *a, ResNode *b)</td></tr>
+<tr class="memdesc:a2708fd1117214b40c3f5b53c237b4ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatena dos listas modificando la primera.  <br /></td></tr>
+<tr class="separator:a2708fd1117214b40c3f5b53c237b4ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b60b0b5f8c6421fb5b5ee22a2feca3"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#ae7b60b0b5f8c6421fb5b5ee22a2feca3">set_new_union</a> (ResNode *a, ResNode *b, int *new_len)</td></tr>
+<tr class="memdesc:ae7b60b0b5f8c6421fb5b5ee22a2feca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unión de dos conjuntos en un nuevo conjunto.  <br /></td></tr>
+<tr class="separator:ae7b60b0b5f8c6421fb5b5ee22a2feca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab962265255ce304c1173c9117f46677a"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#ab962265255ce304c1173c9117f46677a">set_mod_union</a> (ResNode *a, ResNode *b, int *new_len)</td></tr>
+<tr class="memdesc:ab962265255ce304c1173c9117f46677a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unión de dos conjuntos, modificando el primero.  <br /></td></tr>
+<tr class="separator:ab962265255ce304c1173c9117f46677a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0853d565c7d78688bf2158e0b90e817"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#af0853d565c7d78688bf2158e0b90e817">set_new_inters</a> (ResNode *a, ResNode *b, int *new_len)</td></tr>
+<tr class="memdesc:af0853d565c7d78688bf2158e0b90e817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intersección de dos conjuntos en un nuevo conjunto.  <br /></td></tr>
+<tr class="separator:af0853d565c7d78688bf2158e0b90e817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473b2c62de42f6c1c835c53784578409"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a473b2c62de42f6c1c835c53784578409">set_mod_inters</a> (ResNode *dest, ResNode *other, int *new_len)</td></tr>
+<tr class="memdesc:a473b2c62de42f6c1c835c53784578409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intersección de dos conjuntos, modificando el primero.  <br /></td></tr>
+<tr class="separator:a473b2c62de42f6c1c835c53784578409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9e5d89152d3a6126cc23e1e0ad99ea"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#a4f9e5d89152d3a6126cc23e1e0ad99ea">set_new_diff</a> (ResNode *a, ResNode *b, int *new_len)</td></tr>
+<tr class="memdesc:a4f9e5d89152d3a6126cc23e1e0ad99ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diferencia de dos conjuntos en un nuevo conjunto.  <br /></td></tr>
+<tr class="separator:a4f9e5d89152d3a6126cc23e1e0ad99ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab504dc4228754e6b98535a265bc67295"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#ab504dc4228754e6b98535a265bc67295">set_mod_diff</a> (ResNode *dest, ResNode *other, int *new_len)</td></tr>
+<tr class="memdesc:ab504dc4228754e6b98535a265bc67295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diferencia de dos conjuntos, modificando el primero.  <br /></td></tr>
+<tr class="separator:ab504dc4228754e6b98535a265bc67295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f9dca31aeb4cc900d6082317a9e357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2expr_8h.html#aa8f9dca31aeb4cc900d6082317a9e357">bool_cast</a> (ResNode *node)</td></tr>
+<tr class="memdesc:aa8f9dca31aeb4cc900d6082317a9e357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convierte un resultado en un valor lógico.  <br /></td></tr>
+<tr class="separator:aa8f9dca31aeb4cc900d6082317a9e357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Declaraciones para la evaluación de expresiones. </p>
+
+<p class="definition">Definición en el archivo <a class="el" href="eval_2expr_8h_source.html">expr.h</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="ae475d6e7f725b42c5fa3feea38d2ea80" name="ae475d6e7f725b42c5fa3feea38d2ea80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae475d6e7f725b42c5fa3feea38d2ea80">&#9670;&#160;</a></span>eval_expr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_expr </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00025">25</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a24b777e030f831dc30fcf38abb5bebb2" name="a24b777e030f831dc30fcf38abb5bebb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b777e030f831dc30fcf38abb5bebb2">&#9670;&#160;</a></span>eval_unary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_unary </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00448">448</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a552f449cf5e198d729bdb8bfe36c0c67" name="a552f449cf5e198d729bdb8bfe36c0c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552f449cf5e198d729bdb8bfe36c0c67">&#9670;&#160;</a></span>eval_or()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_or </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00092">92</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a476a9530801ab731e50d821740570787" name="a476a9530801ab731e50d821740570787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476a9530801ab731e50d821740570787">&#9670;&#160;</a></span>eval_and()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_and </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00107">107</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="ada065b31601b17d24bb42066399a69c8" name="ada065b31601b17d24bb42066399a69c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada065b31601b17d24bb42066399a69c8">&#9670;&#160;</a></span>eval_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_equal </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00122">122</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="ad3dd0870fe314ccec8dd5856c2bb020f" name="ad3dd0870fe314ccec8dd5856c2bb020f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3dd0870fe314ccec8dd5856c2bb020f">&#9670;&#160;</a></span>eval_less()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_less </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00146">146</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a98c939f62b316dad8d199efea80b2a32" name="a98c939f62b316dad8d199efea80b2a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c939f62b316dad8d199efea80b2a32">&#9670;&#160;</a></span>eval_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_in </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00168">168</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="aca36bf9dc31c8c5a695a9473ef73e9ea" name="aca36bf9dc31c8c5a695a9473ef73e9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca36bf9dc31c8c5a695a9473ef73e9ea">&#9670;&#160;</a></span>eval_elem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_elem </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00191">191</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a569573111a87da59701259696019ed11" name="a569573111a87da59701259696019ed11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569573111a87da59701259696019ed11">&#9670;&#160;</a></span>eval_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_add </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00217">217</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a048d1e539f72aa3f5ceaa90f5ddde079" name="a048d1e539f72aa3f5ceaa90f5ddde079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048d1e539f72aa3f5ceaa90f5ddde079">&#9670;&#160;</a></span>eval_sub()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_sub </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00250">250</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a1a873a3224337011774ae420b6e19af4" name="a1a873a3224337011774ae420b6e19af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a873a3224337011774ae420b6e19af4">&#9670;&#160;</a></span>eval_mul()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_mul </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00278">278</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a22418a6a5820161b7795c75db6786498" name="a22418a6a5820161b7795c75db6786498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22418a6a5820161b7795c75db6786498">&#9670;&#160;</a></span>eval_div()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_div </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00305">305</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a38a35edeb2072c2be3737341b6748259" name="a38a35edeb2072c2be3737341b6748259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a35edeb2072c2be3737341b6748259">&#9670;&#160;</a></span>eval_fncall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_fncall </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00373">373</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="adf678b60b3d4311deb4c5cb77440129a" name="adf678b60b3d4311deb4c5cb77440129a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf678b60b3d4311deb4c5cb77440129a">&#9670;&#160;</a></span>lst_new_concat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * lst_new_concat </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatena dos listas en una nueva lista. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento de una lista. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento de otra lista. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento de la nueva lista o <code>NULL</code>.</dd></dl>
+<p>Todos los <code>refcnt</code> se incrementan. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00475">475</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a2708fd1117214b40c3f5b53c237b4ad9" name="a2708fd1117214b40c3f5b53c237b4ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2708fd1117214b40c3f5b53c237b4ad9">&#9670;&#160;</a></span>lst_mod_concat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * lst_mod_concat </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatena dos listas modificando la primera. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento de la primera lista. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento de la segunda lista. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento de la primera lista modificada o <code>NULL</code>.</dd></dl>
+<p>Agrega los elementos de una lista (<code>b</code>) al final de otra (<code>a</code>). No devuelve errores. Puede devolver <code>NULL</code> (lista vacía). Los elementos de <code>b</code> incrementan su <code>refcnt</code>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00503">503</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="ae7b60b0b5f8c6421fb5b5ee22a2feca3" name="ae7b60b0b5f8c6421fb5b5ee22a2feca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b60b0b5f8c6421fb5b5ee22a2feca3">&#9670;&#160;</a></span>set_new_union()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * set_new_union </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unión de dos conjuntos en un nuevo conjunto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento de un conjunto. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento de otro conjunto. </td></tr>
+    <tr><td class="paramname">new_len</td><td>Tamaño del nuevo conjunto. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento de un nuevo conjunto o <code>NULL</code>. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00522">522</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="ab962265255ce304c1173c9117f46677a" name="ab962265255ce304c1173c9117f46677a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab962265255ce304c1173c9117f46677a">&#9670;&#160;</a></span>set_mod_union()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * set_mod_union </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unión de dos conjuntos, modificando el primero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento del primer conjunto. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento del segundo conjunto. </td></tr>
+    <tr><td class="paramname">new_len</td><td>Tamaño del primer conjunto modificado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento del primer conjunto modificado o <code>NULL</code>.</dd></dl>
+<p>Añade los elementos del conjunto <code>b</code> al conjunto <code>a</code> sin repetidos. No devuelve errores. Puede devolver NULL (conjunto vacío). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00582">582</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="af0853d565c7d78688bf2158e0b90e817" name="af0853d565c7d78688bf2158e0b90e817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0853d565c7d78688bf2158e0b90e817">&#9670;&#160;</a></span>set_new_inters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * set_new_inters </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Intersección de dos conjuntos en un nuevo conjunto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento de un conjunto. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento de otro conjunto. </td></tr>
+    <tr><td class="paramname">new_len</td><td>Tamaño del nuevo conjunto. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento de un nuevo conjunto o <code>NULL</code>. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00617">617</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a473b2c62de42f6c1c835c53784578409" name="a473b2c62de42f6c1c835c53784578409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473b2c62de42f6c1c835c53784578409">&#9670;&#160;</a></span>set_mod_inters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * set_mod_inters </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Intersección de dos conjuntos, modificando el primero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento del primer conjunto. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento del segundo conjunto. </td></tr>
+    <tr><td class="paramname">new_len</td><td>Tamaño del primer conjunto modificado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento del primer conjunto modificado o <code>NULL</code>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Tareas pendientes:</a></b></dt><dd>Implementar. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00633">633</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="a4f9e5d89152d3a6126cc23e1e0ad99ea" name="a4f9e5d89152d3a6126cc23e1e0ad99ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9e5d89152d3a6126cc23e1e0ad99ea">&#9670;&#160;</a></span>set_new_diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * set_new_diff </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diferencia de dos conjuntos en un nuevo conjunto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento de un conjunto. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento de otro conjunto. </td></tr>
+    <tr><td class="paramname">new_len</td><td>Tamaño del nuevo conjunto. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento de un nuevo conjunto o <code>NULL</code>. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00651">651</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="ab504dc4228754e6b98535a265bc67295" name="ab504dc4228754e6b98535a265bc67295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab504dc4228754e6b98535a265bc67295">&#9670;&#160;</a></span>set_mod_diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * set_mod_diff </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diferencia de dos conjuntos, modificando el primero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Primer elemento del primer conjunto. </td></tr>
+    <tr><td class="paramname">b</td><td>Primer elemento del segundo conjunto. </td></tr>
+    <tr><td class="paramname">new_len</td><td>Tamaño del primer conjunto modificado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primer elemento del primer conjunto modificado o <code>NULL</code>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Tareas pendientes:</a></b></dt><dd>Implementar. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00674">674</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+<a id="aa8f9dca31aeb4cc900d6082317a9e357" name="aa8f9dca31aeb4cc900d6082317a9e357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f9dca31aeb4cc900d6082317a9e357">&#9670;&#160;</a></span>bool_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bool_cast </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convierte un resultado en un valor lógico. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Valor a convertir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>true</code> o <code>false</code>. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2expr_8c_source.html#l00419">419</a> del archivo <a class="el" href="eval_2expr_8c_source.html">expr.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5081caf4253f166c37035217032e821c.html">eval</a></li><li class="navelem"><a class="el" href="eval_2expr_8h.html">expr.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

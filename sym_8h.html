@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/eval/sym.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('sym_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo sym.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manejo de símbolos.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;eval.h&quot;</code><br />
+</div>
+<p><a href="sym_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSymbol.html">Symbol</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa un símbolo en la tabla de símbolos.  <a href="structSymbol.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__id__list__n.html">IdListN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodo de una lista de identificadores.  <a href="structs__id__list__n.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__sym__tab.html">SymTab</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa una tabla de símbolos.  <a href="structs__sym__tab.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ab9b1873fed70221e3fab8491f33b51e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSymbol.html">Symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#ab9b1873fed70221e3fab8491f33b51e8">res_new_sym</a> (char *id, ResNode *value)</td></tr>
+<tr class="memdesc:ab9b1873fed70221e3fab8491f33b51e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un nuevo símbolo.  <br /></td></tr>
+<tr class="separator:ab9b1873fed70221e3fab8491f33b51e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea67cb8369d1af40c6abd3471f0313d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a5ea67cb8369d1af40c6abd3471f0313d">res_free_sym</a> (<a class="el" href="structSymbol.html">Symbol</a> **sym)</td></tr>
+<tr class="memdesc:a5ea67cb8369d1af40c6abd3471f0313d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera la memoria de un símbolo.  <br /></td></tr>
+<tr class="separator:a5ea67cb8369d1af40c6abd3471f0313d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1030d204f45c60deac194859d2b0719e"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a1030d204f45c60deac194859d2b0719e">eval_sym</a> (AstNode *node)</td></tr>
+<tr class="memdesc:a1030d204f45c60deac194859d2b0719e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalúa un símbolo a partir de su nodo AST.  <br /></td></tr>
+<tr class="separator:a1030d204f45c60deac194859d2b0719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555e6ffc1f6ff35aa796a4e226eb1bef"><td class="memItemLeft" align="right" valign="top">SymTab *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a555e6ffc1f6ff35aa796a4e226eb1bef">res_new_symtab</a> (SymTab *prev)</td></tr>
+<tr class="memdesc:a555e6ffc1f6ff35aa796a4e226eb1bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea una nueva tabla de símbolos.  <br /></td></tr>
+<tr class="separator:a555e6ffc1f6ff35aa796a4e226eb1bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bab2467c06dfdcd06a66b8d50fa9d0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSymbol.html">Symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a2bab2467c06dfdcd06a66b8d50fa9d0a">scope_get_sym</a> (char *id, int hash)</td></tr>
+<tr class="memdesc:a2bab2467c06dfdcd06a66b8d50fa9d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene un símbolo del alcance actual o de los alcances previos.  <br /></td></tr>
+<tr class="separator:a2bab2467c06dfdcd06a66b8d50fa9d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4da65d2e7509184af964dcd09ff4dc6"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#ae4da65d2e7509184af964dcd09ff4dc6">scope_add_sym</a> (char *id, int hash, ResNode *value)</td></tr>
+<tr class="memdesc:ae4da65d2e7509184af964dcd09ff4dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un símbolo al alcance actual.  <br /></td></tr>
+<tr class="separator:ae4da65d2e7509184af964dcd09ff4dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b23662e77b87c7e1a0217a71b6c841c"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a0b23662e77b87c7e1a0217a71b6c841c">scope_del_sym</a> (char *id, int hash)</td></tr>
+<tr class="memdesc:a0b23662e77b87c7e1a0217a71b6c841c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina un símbolo de la tabla actual.  <br /></td></tr>
+<tr class="separator:a0b23662e77b87c7e1a0217a71b6c841c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b34416e7640b70ebf09bb2813145b26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a4b34416e7640b70ebf09bb2813145b26">scope_init</a> (void)</td></tr>
+<tr class="memdesc:a4b34416e7640b70ebf09bb2813145b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea e inicializa la tabla de símbolos del alcance global o base.  <br /></td></tr>
+<tr class="separator:a4b34416e7640b70ebf09bb2813145b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b94a098626f92dcd37019eb05da06a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#ae3b94a098626f92dcd37019eb05da06a">scope_depth</a> (void)</td></tr>
+<tr class="memdesc:ae3b94a098626f92dcd37019eb05da06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la profundidad actual de los alcances.  <br /></td></tr>
+<tr class="separator:ae3b94a098626f92dcd37019eb05da06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab258e0b8332c711bed6152e2b667eb0d"><td class="memItemLeft" align="right" valign="top">SymTab *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#ab258e0b8332c711bed6152e2b667eb0d">scope_change</a> (SymTab *new, int depth)</td></tr>
+<tr class="memdesc:ab258e0b8332c711bed6152e2b667eb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambia el alcance actual.  <br /></td></tr>
+<tr class="separator:ab258e0b8332c711bed6152e2b667eb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e83fec2124d95b5abddbfac168f857"><td class="memItemLeft" align="right" valign="top">SymTab *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a52e83fec2124d95b5abddbfac168f857">scope_get</a> (void)</td></tr>
+<tr class="memdesc:a52e83fec2124d95b5abddbfac168f857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la tabla de símbolos del alcance actual.  <br /></td></tr>
+<tr class="separator:a52e83fec2124d95b5abddbfac168f857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bf3469f9a59a4398e5fca073103595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a58bf3469f9a59a4398e5fca073103595">scope_push</a> (void)</td></tr>
+<tr class="memdesc:a58bf3469f9a59a4398e5fca073103595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia un nuevo alcance.  <br /></td></tr>
+<tr class="separator:a58bf3469f9a59a4398e5fca073103595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445b08c23ae86354a6483654b3200acb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a445b08c23ae86354a6483654b3200acb">scope_pop</a> (void)</td></tr>
+<tr class="memdesc:a445b08c23ae86354a6483654b3200acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finaliza el alcance actual.  <br /></td></tr>
+<tr class="separator:a445b08c23ae86354a6483654b3200acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7347d2b4e1fa566c0e330710a870101d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sym_8h.html#a7347d2b4e1fa566c0e330710a870101d">scope_clear</a> (SymTab *symtab)</td></tr>
+<tr class="memdesc:a7347d2b4e1fa566c0e330710a870101d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpia todos los símbolos de una tabla de símbolos.  <br /></td></tr>
+<tr class="separator:a7347d2b4e1fa566c0e330710a870101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Manejo de símbolos. </p>
+<p>Este archivo contiene las definiciones de estructuras y declaraciones de funciones para manejar símbolos, tablas de símbolos y alcances en el intérprete.</p>
+<dl class="section remark"><dt>Comentarios</dt><dd><em>Símbolo</em> es un par <code>(nombre, valor)</code>. <em>Identificador</em> es sinónimo de <em>nombre</em>. <em>Variable</em> es un símbolo cuyo valor puede cambiar. </dd></dl>
+
+<p class="definition">Definición en el archivo <a class="el" href="sym_8h_source.html">sym.h</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="ab9b1873fed70221e3fab8491f33b51e8" name="ab9b1873fed70221e3fab8491f33b51e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b1873fed70221e3fab8491f33b51e8">&#9670;&#160;</a></span>res_new_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSymbol.html">Symbol</a> * res_new_sym </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea un nuevo símbolo. </p>
+<p>Crea un nuevo símbolo. Listo para ser añadido a la tabla de símbolos.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identificador del símbolo. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor asociado al símbolo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero al nuevo símbolo creado. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00054">54</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a5ea67cb8369d1af40c6abd3471f0313d" name="a5ea67cb8369d1af40c6abd3471f0313d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea67cb8369d1af40c6abd3471f0313d">&#9670;&#160;</a></span>res_free_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void res_free_sym </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSymbol.html">Symbol</a> **&#160;</td>
+          <td class="paramname"><em>sym</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera la memoria de un símbolo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sym</td><td>Puntero al puntero del símbolo a liberar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>Esta función NO libera el valor asociado al símbolo. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00062">62</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a1030d204f45c60deac194859d2b0719e" name="a1030d204f45c60deac194859d2b0719e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1030d204f45c60deac194859d2b0719e">&#9670;&#160;</a></span>eval_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * eval_sym </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evalúa un símbolo a partir de su nodo AST. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Nodo AST del identificador. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor asociado al símbolo en el alcance actual. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00071">71</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a555e6ffc1f6ff35aa796a4e226eb1bef" name="a555e6ffc1f6ff35aa796a4e226eb1bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555e6ffc1f6ff35aa796a4e226eb1bef">&#9670;&#160;</a></span>res_new_symtab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SymTab * res_new_symtab </td>
+          <td>(</td>
+          <td class="paramtype">SymTab *&#160;</td>
+          <td class="paramname"><em>prev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea una nueva tabla de símbolos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev</td><td>Puntero a la tabla de símbolos del alcance anterior. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la nueva tabla de símbolos creada. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00079">79</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a2bab2467c06dfdcd06a66b8d50fa9d0a" name="a2bab2467c06dfdcd06a66b8d50fa9d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bab2467c06dfdcd06a66b8d50fa9d0a">&#9670;&#160;</a></span>scope_get_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSymbol.html">Symbol</a> * scope_get_sym </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene un símbolo del alcance actual o de los alcances previos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identificador del símbolo. </td></tr>
+    <tr><td class="paramname">hash</td><td>Valor hash del identificador. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero al símbolo encontrado o <code>NULL</code> si no existe. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00206">206</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="ae4da65d2e7509184af964dcd09ff4dc6" name="ae4da65d2e7509184af964dcd09ff4dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4da65d2e7509184af964dcd09ff4dc6">&#9670;&#160;</a></span>scope_add_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * scope_add_sym </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Añade un símbolo al alcance actual. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identificador del símbolo. </td></tr>
+    <tr><td class="paramname">hash</td><td>Valor hash del identificador. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor a asociar con el símbolo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>NULL</code> en caso de éxito, o un <code>ResNode</code> de error si falla. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00235">235</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a0b23662e77b87c7e1a0217a71b6c841c" name="a0b23662e77b87c7e1a0217a71b6c841c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b23662e77b87c7e1a0217a71b6c841c">&#9670;&#160;</a></span>scope_del_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * scope_del_sym </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elimina un símbolo de la tabla actual. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identificador del símbolo a eliminar. </td></tr>
+    <tr><td class="paramname">hash</td><td>Valor hash del identificador. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>NULL</code> en caso de éxito, o un <code>ResNode</code> de error si falla. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Esta función no elimina el valor asociado al símbolo. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00271">271</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a4b34416e7640b70ebf09bb2813145b26" name="a4b34416e7640b70ebf09bb2813145b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b34416e7640b70ebf09bb2813145b26">&#9670;&#160;</a></span>scope_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scope_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea e inicializa la tabla de símbolos del alcance global o base. </p>
+<p>Primero crea una tabla para funciones "in-built", luego una tabla "global" que apunte como anterior a la primera. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00113">113</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="ae3b94a098626f92dcd37019eb05da06a" name="ae3b94a098626f92dcd37019eb05da06a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b94a098626f92dcd37019eb05da06a">&#9670;&#160;</a></span>scope_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int scope_depth </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene la profundidad actual de los alcances. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Número de alcances activos actualmente. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00150">150</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="ab258e0b8332c711bed6152e2b667eb0d" name="ab258e0b8332c711bed6152e2b667eb0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab258e0b8332c711bed6152e2b667eb0d">&#9670;&#160;</a></span>scope_change()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SymTab * scope_change </td>
+          <td>(</td>
+          <td class="paramtype">SymTab *&#160;</td>
+          <td class="paramname"><em>new</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cambia el alcance actual. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new</td><td>Nueva tabla de símbolos a establecer como actual. </td></tr>
+    <tr><td class="paramname">depth</td><td>Profundidad del alcance a establecer si <code>new</code> es <code>NULL</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la tabla de símbolos anterior. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00131">131</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a52e83fec2124d95b5abddbfac168f857" name="a52e83fec2124d95b5abddbfac168f857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e83fec2124d95b5abddbfac168f857">&#9670;&#160;</a></span>scope_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SymTab * scope_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene la tabla de símbolos del alcance actual. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la tabla de símbolos actual. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00146">146</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a58bf3469f9a59a4398e5fca073103595" name="a58bf3469f9a59a4398e5fca073103595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bf3469f9a59a4398e5fca073103595">&#9670;&#160;</a></span>scope_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scope_push </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia un nuevo alcance. </p>
+<p>Crea una nueva tabla de símbolos y la establece como la actual, enlazando la tabla anterior como su predecesor. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00154">154</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a445b08c23ae86354a6483654b3200acb" name="a445b08c23ae86354a6483654b3200acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445b08c23ae86354a6483654b3200acb">&#9670;&#160;</a></span>scope_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scope_pop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finaliza el alcance actual. </p>
+<p>Elimina la tabla de símbolos actual y establece la anterior como la actual. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00164">164</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+<a id="a7347d2b4e1fa566c0e330710a870101d" name="a7347d2b4e1fa566c0e330710a870101d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7347d2b4e1fa566c0e330710a870101d">&#9670;&#160;</a></span>scope_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scope_clear </td>
+          <td>(</td>
+          <td class="paramtype">SymTab *&#160;</td>
+          <td class="paramname"><em>symtab</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limpia todos los símbolos de una tabla de símbolos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">symtab</td><td>Puntero a la tabla de símbolos a limpiar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>Esta función no elimina la tabla en sí, solo su contenido. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sym_8c_source.html#l00098">98</a> del archivo <a class="el" href="sym_8c_source.html">sym.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5081caf4253f166c37035217032e821c.html">eval</a></li><li class="navelem"><a class="el" href="sym_8h.html">sym.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

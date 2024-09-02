@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Fichero Fuente src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8c_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;getopt.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span> <span class="comment">// Macros EXIT</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="sym_8h.html">eval/sym.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;global.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;log.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;graph.h&quot;</span> <span class="comment">// graphviz</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="main_8c.html#ae376779bbb41b976637c3b9940423416">   19</a></span><span class="preprocessor">#define DO_NOT_EXIT (-EXIT_FAILURE - EXIT_SUCCESS)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="main_8c.html#ab138aa8e11f58bcdcc7134adf240ea8c">yydebug</a>; </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="main_8c.html#a0ea9e3b522e448ac462274fe70e1be82">yynerrs</a>; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> FILE *<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="main_8c.html#a847a2de5c1c28c9d7055a2b89ed7dad7">   24</a></span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a847a2de5c1c28c9d7055a2b89ed7dad7">yyparse</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="main_8c.html#a4c0843d6d86bcc6cb1491296b371d564">   26</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="main_8c.html#a4c0843d6d86bcc6cb1491296b371d564">g_exiting</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="main_8c.html#a798b30fc2650cd1959051b0134a21b65">   27</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="main_8c.html#a798b30fc2650cd1959051b0134a21b65">g_repl</a> = <span class="keyword">true</span>; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="main_8c.html#a3be69784a8b5df32b2444322799db46f">   28</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="main_8c.html#a3be69784a8b5df32b2444322799db46f">g_err_loc</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="main_8c.html#a32b0dacdd39e1148619bf7da43c5437c">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="main_8c.html#a32b0dacdd39e1148619bf7da43c5437c">g_debug</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="main_8c.html#aab2aed0cf38b7162f1e69e641a167d42">   30</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="main_8c.html#aab2aed0cf38b7162f1e69e641a167d42">g_color</a> = <span class="keyword">true</span>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">   31</a></span><span class="keywordtype">char</span> *<a class="code hl_variable" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a> = NULL; </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="main_8c.html#a32584c29f36551ff8f70da1527a6e948">   33</a></span><span class="keywordtype">size_t</span> <a class="code hl_variable" href="main_8c.html#a32584c29f36551ff8f70da1527a6e948">g_sym_tab_size</a> = 9973; </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="main_8c.html#a41e91dc965cef8a81b891068909d91b8">   34</a></span><span class="keywordtype">size_t</span> <a class="code hl_variable" href="main_8c.html#a41e91dc965cef8a81b891068909d91b8">g_max_stack_depth</a> = 100; </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="main_8c.html#aa59a4876785be9fad8627f7af94673ac">   36</a></span>AstNode *<a class="code hl_variable" href="main_8c.html#aa59a4876785be9fad8627f7af94673ac">g_ast</a> = NULL; </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="main_8c.html#a88cec006eb28b679b90c33e862072bc0">   37</a></span>SymTab *<a class="code hl_variable" href="main_8c.html#a88cec006eb28b679b90c33e862072bc0">g_symtab</a> = NULL; </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="main_8c.html#a402ea961bfc2ffeee61e3a7c330b1559">print_help</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a3ce4ce0a5ba4f9a3ee7b56f981647181">args_parse</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[], <span class="keywordtype">bool</span> *graph);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="main_8c.html#a9338e40f7534be2d2aafb72d378b0eff">set_debug_mode</a>(<span class="keywordtype">char</span> *debug_mode);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#ae53975cf2a6bd7eeadc85bebac3cd9cd">setup_yyin</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">   91</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// Opciones no globales</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">bool</span> graph = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">int</span> exit_code = <a class="code hl_function" href="main_8c.html#a3ce4ce0a5ba4f9a3ee7b56f981647181">args_parse</a>(argc, argv, &amp;graph);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordflow">if</span>(exit_code != <a class="code hl_define" href="main_8c.html#ae376779bbb41b976637c3b9940423416">DO_NOT_EXIT</a>) <span class="keywordflow">return</span> exit_code;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">// Crea e inicializa la tabla de símbolos</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <a class="code hl_function" href="sym_8c.html#a4b34416e7640b70ebf09bb2813145b26">scope_init</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">if</span>(!<a class="code hl_variable" href="main_8c.html#a88cec006eb28b679b90c33e862072bc0">g_symtab</a> || !(<a class="code hl_variable" href="main_8c.html#a88cec006eb28b679b90c33e862072bc0">g_symtab</a>-&gt;hash_tab)) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    print_error(<span class="stringliteral">&quot;Interno&quot;</span>, LOC_S<span class="stringliteral">&quot;Error al crear tabla de símbolos&quot;</span>, LOC);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  repl_print(<span class="stringliteral">&quot;&gt;&gt;&gt; &quot;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  exit_code = <a class="code hl_function" href="main_8c.html#a847a2de5c1c28c9d7055a2b89ed7dad7">yyparse</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordflow">if</span>(graph) graphviz(<a class="code hl_variable" href="main_8c.html#aa59a4876785be9fad8627f7af94673ac">g_ast</a>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  ast_free(<a class="code hl_variable" href="main_8c.html#aa59a4876785be9fad8627f7af94673ac">g_ast</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordflow">if</span>(<a class="code hl_variable" href="main_8c.html#a798b30fc2650cd1959051b0134a21b65">g_repl</a>) <span class="keywordflow">return</span> exit_code;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  fclose(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">if</span>(<a class="code hl_variable" href="main_8c.html#a0ea9e3b522e448ac462274fe70e1be82">yynerrs</a> &gt; 0) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    printf(</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <span class="stringliteral">&quot;AVISO: %d error%s encontrado%s\n&quot;</span>,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <a class="code hl_variable" href="main_8c.html#a0ea9e3b522e448ac462274fe70e1be82">yynerrs</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <a class="code hl_variable" href="main_8c.html#a0ea9e3b522e448ac462274fe70e1be82">yynerrs</a> &gt; 1 ? <span class="stringliteral">&quot;es&quot;</span> : <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      <a class="code hl_variable" href="main_8c.html#a0ea9e3b522e448ac462274fe70e1be82">yynerrs</a> &gt; 1 ? <span class="stringliteral">&quot;s&quot;</span> : <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    );</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> exit_code;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="main_8c.html#a402ea961bfc2ffeee61e3a7c330b1559">  127</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8c.html#a402ea961bfc2ffeee61e3a7c330b1559">print_help</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  printf(<span class="stringliteral">&quot;Uso: aleph [opciones] [archivo]\n&quot;</span>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  printf(<span class="stringliteral">&quot;Si no se indica un archivo, se ejecuta en modo interactivo (REPL)\n&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  printf(<span class="stringliteral">&quot;Opciones:\n&quot;</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  printf(<span class="stringliteral">&quot;-h Muestra este mensaje de ayuda.\n&quot;</span>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  printf(<span class="stringliteral">&quot;-c Desactiva el color en mensajes de error y depuración.\n&quot;</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  printf(<span class="stringliteral">&quot;-d MODOS Establece los modos de depuración:\n&quot;</span>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  printf(<span class="stringliteral">&quot;    -d e Muestra dónde se crean los mensajes de error.\n&quot;</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  printf(<span class="stringliteral">&quot;    -d i Activa mensajes de depuración del intérprete.\n&quot;</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  printf(<span class="stringliteral">&quot;    -d b Activa la depuración incluida en Bison.\n&quot;</span>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  printf(<span class="stringliteral">&quot;    Ejemplo:\n&quot;</span>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  printf(<span class="stringliteral">&quot;        -d bie Combina los 3 modos.\n&quot;</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  printf(<span class="stringliteral">&quot;-t N Establece la capacidad máxima de la tabla de símbolos:\n&quot;</span>);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  printf(<span class="stringliteral">&quot;    -t %zu Valor por defecto.\n&quot;</span>, <a class="code hl_variable" href="main_8c.html#a32584c29f36551ff8f70da1527a6e948">g_sym_tab_size</a>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  printf(<span class="stringliteral">&quot;    -t N Capacidad para un máximo de N símbolos.\n&quot;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  printf(<span class="stringliteral">&quot;-s N Establece la cantidad máxima de &#39;scopes&#39; activos a la vez:\n&quot;</span>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  printf(<span class="stringliteral">&quot;    -s %zu Valor por defecto.\n&quot;</span>, <a class="code hl_variable" href="main_8c.html#a41e91dc965cef8a81b891068909d91b8">g_max_stack_depth</a>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  printf(<span class="stringliteral">&quot;    -s N Máximo de N scopes activos a la vez.\n&quot;</span>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  printf(<span class="stringliteral">&quot;-g Genera un gráfico del AST (ast.dot, ast.png).\n&quot;</span>);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  printf(<span class="stringliteral">&quot;-p F Imprime código generado por el AST en el archivo F.\n&quot;</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="main_8c.html#a3ce4ce0a5ba4f9a3ee7b56f981647181">  149</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a3ce4ce0a5ba4f9a3ee7b56f981647181">args_parse</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[], <span class="keywordtype">bool</span> *graph) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keywordtype">int</span> opt = 0;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  opterr = 0; <span class="comment">// desactiva mensajes de error por defecto</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keywordflow">while</span>((opt = getopt(argc, argv, <span class="stringliteral">&quot;d:t:s:gp:hc&quot;</span>)) != -1) {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">switch</span>(opt) {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span>(!<a class="code hl_function" href="main_8c.html#a9338e40f7534be2d2aafb72d378b0eff">set_debug_mode</a>(optarg)) <span class="keywordflow">goto</span> error;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="comment">// NOTE no se verifica un input correcto</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <a class="code hl_variable" href="main_8c.html#a32584c29f36551ff8f70da1527a6e948">g_sym_tab_size</a> = strtoull(optarg, NULL, 10);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="comment">// NOTE no se verifica un input correcto</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_variable" href="main_8c.html#a41e91dc965cef8a81b891068909d91b8">g_max_stack_depth</a> = strtoull(optarg, NULL, 10);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;g&#39;</span>:</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        *graph = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        print_error(<span class="stringliteral">&quot;CLI&quot;</span>, <span class="stringliteral">&quot;Opción no implementada.&quot;</span>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <a class="code hl_function" href="main_8c.html#a402ea961bfc2ffeee61e3a7c330b1559">print_help</a>();</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_variable" href="main_8c.html#aab2aed0cf38b7162f1e69e641a167d42">g_color</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        error:</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        print_error(<span class="stringliteral">&quot;CLI&quot;</span>, <span class="stringliteral">&quot;Argumento inválido. Usa -h para más información.&quot;</span>);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="main_8c.html#ae53975cf2a6bd7eeadc85bebac3cd9cd">setup_yyin</a>(argc, argv);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="main_8c.html#a9338e40f7534be2d2aafb72d378b0eff">  186</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="main_8c.html#a9338e40f7534be2d2aafb72d378b0eff">set_debug_mode</a>(<span class="keywordtype">char</span> *debug_mode) {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordflow">while</span>(*debug_mode) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">switch</span>(*debug_mode) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>: <a class="code hl_variable" href="main_8c.html#a3be69784a8b5df32b2444322799db46f">g_err_loc</a> = <span class="keyword">true</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>: <a class="code hl_variable" href="main_8c.html#a32b0dacdd39e1148619bf7da43c5437c">g_debug</a> = <span class="keyword">true</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>: <a class="code hl_variable" href="main_8c.html#ab138aa8e11f58bcdcc7134adf240ea8c">yydebug</a> = 1; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    debug_mode++;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="main_8c.html#ae53975cf2a6bd7eeadc85bebac3cd9cd">  199</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#ae53975cf2a6bd7eeadc85bebac3cd9cd">setup_yyin</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordflow">if</span>(optind &lt; argc) {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">if</span>(optind + 1 &lt; argc) {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      print_error(<span class="stringliteral">&quot;CLI&quot;</span>, <span class="stringliteral">&quot;Más de un archivo indicado&quot;</span>);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_variable" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a> = argv[optind];</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="comment">// Comprueba existencia del archivo</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">if</span>(!(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a> = fopen(<a class="code hl_variable" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a>, <span class="stringliteral">&quot;r&quot;</span>))) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      print_error(<span class="stringliteral">&quot;CLI&quot;</span>, <span class="stringliteral">&quot;El archivo &#39;%s&#39; no existe&quot;</span>, <a class="code hl_variable" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    fclose(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>); <span class="comment">// Fin comprobación</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">if</span>(!(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a> = fopen(<a class="code hl_variable" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a>, <span class="stringliteral">&quot;a+&quot;</span>))) {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      print_error(<span class="stringliteral">&quot;CLI&quot;</span>, <span class="stringliteral">&quot;Hubo un error al abrir &#39;%s&#39;&quot;</span>, <a class="code hl_variable" href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a>);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    fseek(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>, -1, SEEK_END); <span class="comment">// Cursor en el último carácter</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="comment">// Se agrega EOL al final si es necesario</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">if</span>(fgetc(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>) != <span class="charliteral">&#39;\n&#39;</span>) fputc(<span class="charliteral">&#39;\n&#39;</span>, <a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    fseek(<a class="code hl_variable" href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a>, 0, SEEK_SET); <span class="comment">// Cursor en el primer carácter</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_variable" href="main_8c.html#a798b30fc2650cd1959051b0134a21b65">g_repl</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="main_8c.html#ae376779bbb41b976637c3b9940423416">DO_NOT_EXIT</a>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>}</div>
+<div class="ttc" id="amain_8c_html_a0ea9e3b522e448ac462274fe70e1be82"><div class="ttname"><a href="main_8c.html#a0ea9e3b522e448ac462274fe70e1be82">yynerrs</a></div><div class="ttdeci">int yynerrs</div><div class="ttdoc">Cantidad de errores de sintaxis en Bison.</div></div>
+<div class="ttc" id="amain_8c_html_a32584c29f36551ff8f70da1527a6e948"><div class="ttname"><a href="main_8c.html#a32584c29f36551ff8f70da1527a6e948">g_sym_tab_size</a></div><div class="ttdeci">size_t g_sym_tab_size</div><div class="ttdoc">Capacidad máxima de la tabla de símbolos.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00033">main.c:33</a></div></div>
+<div class="ttc" id="amain_8c_html_a32b0dacdd39e1148619bf7da43c5437c"><div class="ttname"><a href="main_8c.html#a32b0dacdd39e1148619bf7da43c5437c">g_debug</a></div><div class="ttdeci">bool g_debug</div><div class="ttdoc">Activa los mensajes de la función 'print_dbg'.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00029">main.c:29</a></div></div>
+<div class="ttc" id="amain_8c_html_a3be69784a8b5df32b2444322799db46f"><div class="ttname"><a href="main_8c.html#a3be69784a8b5df32b2444322799db46f">g_err_loc</a></div><div class="ttdeci">bool g_err_loc</div><div class="ttdoc">Activa la ubicación de los mensajes de error.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00028">main.c:28</a></div></div>
+<div class="ttc" id="amain_8c_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdoc">Función principal del intérprete.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00091">main.c:91</a></div></div>
+<div class="ttc" id="amain_8c_html_a3ce4ce0a5ba4f9a3ee7b56f981647181"><div class="ttname"><a href="main_8c.html#a3ce4ce0a5ba4f9a3ee7b56f981647181">args_parse</a></div><div class="ttdeci">static int args_parse(int argc, char *argv[], bool *graph)</div><div class="ttdoc">Analiza los argumentos de la línea de comandos.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00149">main.c:149</a></div></div>
+<div class="ttc" id="amain_8c_html_a402ea961bfc2ffeee61e3a7c330b1559"><div class="ttname"><a href="main_8c.html#a402ea961bfc2ffeee61e3a7c330b1559">print_help</a></div><div class="ttdeci">static void print_help(void)</div><div class="ttdoc">Imprime el mensaje de ayuda.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00127">main.c:127</a></div></div>
+<div class="ttc" id="amain_8c_html_a41e91dc965cef8a81b891068909d91b8"><div class="ttname"><a href="main_8c.html#a41e91dc965cef8a81b891068909d91b8">g_max_stack_depth</a></div><div class="ttdeci">size_t g_max_stack_depth</div><div class="ttdoc">Evita recursión infinita o demasiado larga.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00034">main.c:34</a></div></div>
+<div class="ttc" id="amain_8c_html_a46af646807e0797e72b6e8945e7ea88b"><div class="ttname"><a href="main_8c.html#a46af646807e0797e72b6e8945e7ea88b">yyin</a></div><div class="ttdeci">FILE * yyin</div><div class="ttdoc">Archivo de entrada de Flex.</div></div>
+<div class="ttc" id="amain_8c_html_a4c0843d6d86bcc6cb1491296b371d564"><div class="ttname"><a href="main_8c.html#a4c0843d6d86bcc6cb1491296b371d564">g_exiting</a></div><div class="ttdeci">bool g_exiting</div><div class="ttdoc">Indica que el intérprete está finalizando.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00026">main.c:26</a></div></div>
+<div class="ttc" id="amain_8c_html_a6c773ccdff83f2c721ed08992f06aad8"><div class="ttname"><a href="main_8c.html#a6c773ccdff83f2c721ed08992f06aad8">g_filename</a></div><div class="ttdeci">char * g_filename</div><div class="ttdoc">Nombre del archivo de entrada.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00031">main.c:31</a></div></div>
+<div class="ttc" id="amain_8c_html_a798b30fc2650cd1959051b0134a21b65"><div class="ttname"><a href="main_8c.html#a798b30fc2650cd1959051b0134a21b65">g_repl</a></div><div class="ttdeci">bool g_repl</div><div class="ttdoc">Modo Read–Eval–Print Loop.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00027">main.c:27</a></div></div>
+<div class="ttc" id="amain_8c_html_a847a2de5c1c28c9d7055a2b89ed7dad7"><div class="ttname"><a href="main_8c.html#a847a2de5c1c28c9d7055a2b89ed7dad7">yyparse</a></div><div class="ttdeci">int yyparse(void)</div><div class="ttdoc">Función principal de Bison.</div></div>
+<div class="ttc" id="amain_8c_html_a88cec006eb28b679b90c33e862072bc0"><div class="ttname"><a href="main_8c.html#a88cec006eb28b679b90c33e862072bc0">g_symtab</a></div><div class="ttdeci">SymTab * g_symtab</div><div class="ttdoc">Tabla de símbolos.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00037">main.c:37</a></div></div>
+<div class="ttc" id="amain_8c_html_a9338e40f7534be2d2aafb72d378b0eff"><div class="ttname"><a href="main_8c.html#a9338e40f7534be2d2aafb72d378b0eff">set_debug_mode</a></div><div class="ttdeci">static bool set_debug_mode(char *debug_mode)</div><div class="ttdoc">Establece el modo de depuración.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00186">main.c:186</a></div></div>
+<div class="ttc" id="amain_8c_html_aa59a4876785be9fad8627f7af94673ac"><div class="ttname"><a href="main_8c.html#aa59a4876785be9fad8627f7af94673ac">g_ast</a></div><div class="ttdeci">AstNode * g_ast</div><div class="ttdoc">AST resultante del análisis sintáctico.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00036">main.c:36</a></div></div>
+<div class="ttc" id="amain_8c_html_aab2aed0cf38b7162f1e69e641a167d42"><div class="ttname"><a href="main_8c.html#aab2aed0cf38b7162f1e69e641a167d42">g_color</a></div><div class="ttdeci">bool g_color</div><div class="ttdoc">Activa color en la salida.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00030">main.c:30</a></div></div>
+<div class="ttc" id="amain_8c_html_ab138aa8e11f58bcdcc7134adf240ea8c"><div class="ttname"><a href="main_8c.html#ab138aa8e11f58bcdcc7134adf240ea8c">yydebug</a></div><div class="ttdeci">int yydebug</div><div class="ttdoc">Activa mensajes para debugging de Bison.</div></div>
+<div class="ttc" id="amain_8c_html_ae376779bbb41b976637c3b9940423416"><div class="ttname"><a href="main_8c.html#ae376779bbb41b976637c3b9940423416">DO_NOT_EXIT</a></div><div class="ttdeci">#define DO_NOT_EXIT</div><div class="ttdoc">Valor especial para indicar que el programa no debe salir.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00019">main.c:19</a></div></div>
+<div class="ttc" id="amain_8c_html_ae53975cf2a6bd7eeadc85bebac3cd9cd"><div class="ttname"><a href="main_8c.html#ae53975cf2a6bd7eeadc85bebac3cd9cd">setup_yyin</a></div><div class="ttdeci">static int setup_yyin(int argc, char *argv[])</div><div class="ttdoc">Configura el archivo de entrada para el intérprete.</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00199">main.c:199</a></div></div>
+<div class="ttc" id="asym_8c_html_a4b34416e7640b70ebf09bb2813145b26"><div class="ttname"><a href="sym_8c.html#a4b34416e7640b70ebf09bb2813145b26">scope_init</a></div><div class="ttdeci">void scope_init(void)</div><div class="ttdoc">Crea e inicializa la tabla de símbolos del alcance global o base.</div><div class="ttdef"><b>Definition:</b> <a href="sym_8c_source.html#l00113">sym.c:113</a></div></div>
+<div class="ttc" id="asym_8h_html"><div class="ttname"><a href="sym_8h.html">sym.h</a></div><div class="ttdoc">Manejo de símbolos.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/eval/error.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('error_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo error.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;eval.h&quot;</code><br />
+</div>
+<p><a href="error_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structResErrorN.html">ResErrorN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodo para errores durante la evaluación.  <a href="structResErrorN.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:afdf49a387c1ef7936e97d9be6cd8d84a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#afdf49a387c1ef7936e97d9be6cd8d84a">MAYBE_ERROR</a>(res)&#160;&#160;&#160;res_continue_error(res, LOC)</td></tr>
+<tr class="memdesc:afdf49a387c1ef7936e97d9be6cd8d84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Llama a <code>res_continue_error</code> con los datos necesarios para la traza.  <br /></td></tr>
+<tr class="separator:afdf49a387c1ef7936e97d9be6cd8d84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2828490b4be3dc5888d5df1649279c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#aa2828490b4be3dc5888d5df1649279c3">RAISE</a>(type,  msg)&#160;&#160;&#160;res_raise_error(type, msg, LOC)</td></tr>
+<tr class="memdesc:aa2828490b4be3dc5888d5df1649279c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Llama a <code>res_raise_error</code> con los datos necesarios para la traza.  <br /></td></tr>
+<tr class="separator:aa2828490b4be3dc5888d5df1649279c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9c3aa7eb5c154e707a7694e2b44d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a3c9c3aa7eb5c154e707a7694e2b44d9a">NULL_RETURN</a>(res,  type,  msg)&#160;&#160;&#160;if(!(res)) return <a class="el" href="error_8h.html#aa2828490b4be3dc5888d5df1649279c3">RAISE</a>(type, msg)</td></tr>
+<tr class="memdesc:a3c9c3aa7eb5c154e707a7694e2b44d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si <code>res</code> es <code>NULL</code> entonces devuelve un error.  <br /></td></tr>
+<tr class="separator:a3c9c3aa7eb5c154e707a7694e2b44d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1454066c22e2ab9960b159380592fb18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a1454066c22e2ab9960b159380592fb18">ERROR_RETURN</a>(res)&#160;&#160;&#160;if(res_is_error(res)) return <a class="el" href="error_8h.html#afdf49a387c1ef7936e97d9be6cd8d84a">MAYBE_ERROR</a>(res)</td></tr>
+<tr class="memdesc:a1454066c22e2ab9960b159380592fb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si <code>res</code> es un error entonces aborta la evaluación.  <br /></td></tr>
+<tr class="separator:a1454066c22e2ab9960b159380592fb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13bdd728bf40d6be44492616c7833964"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a13bdd728bf40d6be44492616c7833964">NULL_GOTO</a>(res,  ret,  type,  msg,  tag)</td></tr>
+<tr class="memdesc:a13bdd728bf40d6be44492616c7833964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si <code>res</code> es <code>NULL</code>, asigna un error a <code>ret</code> y salta a <code>tag</code>.  <br /></td></tr>
+<tr class="separator:a13bdd728bf40d6be44492616c7833964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c03746771726251d8b58be4877173e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a5c03746771726251d8b58be4877173e9">ERROR_GOTO</a>(res,  ret,  tag)</td></tr>
+<tr class="memdesc:a5c03746771726251d8b58be4877173e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si <code>res</code> es un error, lo "continúa" en <code>ret</code> y salta a <code>tag</code>.  <br /></td></tr>
+<tr class="separator:a5c03746771726251d8b58be4877173e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a8865b6f6b667beffbb275c557108abe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a8865b6f6b667beffbb275c557108abe4">res_free_error</a> (ResNode *node)</td></tr>
+<tr class="memdesc:a8865b6f6b667beffbb275c557108abe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera la memoria de un nodo de error.  <br /></td></tr>
+<tr class="separator:a8865b6f6b667beffbb275c557108abe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90038c8569c3dfaf88a8086d6032e85"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#ac90038c8569c3dfaf88a8086d6032e85">res_raise_error</a> (char *type, char *msg, char *file, int ln, const char *fn)</td></tr>
+<tr class="memdesc:ac90038c8569c3dfaf88a8086d6032e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un nuevo error y muestra un mensaje asociado.  <br /></td></tr>
+<tr class="separator:ac90038c8569c3dfaf88a8086d6032e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2121d1cabcb7b4183c745309a4af8e10"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a2121d1cabcb7b4183c745309a4af8e10">res_continue_error</a> (ResNode *r, char *file, int ln, const char *fn)</td></tr>
+<tr class="memdesc:a2121d1cabcb7b4183c745309a4af8e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Continúa" un error y añade información a la traza.  <br /></td></tr>
+<tr class="separator:a2121d1cabcb7b4183c745309a4af8e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8c6fb94bf0ff138fb3887a9c83d8a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a0c8c6fb94bf0ff138fb3887a9c83d8a5">res_is_error</a> (ResNode *node)</td></tr>
+<tr class="memdesc:a0c8c6fb94bf0ff138fb3887a9c83d8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si un nodo resultado es un error.  <br /></td></tr>
+<tr class="separator:a0c8c6fb94bf0ff138fb3887a9c83d8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Declaraciones para el manejo de errores en la evaluación. </p>
+
+<p class="definition">Definición en el archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="afdf49a387c1ef7936e97d9be6cd8d84a" name="afdf49a387c1ef7936e97d9be6cd8d84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf49a387c1ef7936e97d9be6cd8d84a">&#9670;&#160;</a></span>MAYBE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAYBE_ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">res</td><td>)</td>
+          <td>&#160;&#160;&#160;res_continue_error(res, LOC)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Llama a <code>res_continue_error</code> con los datos necesarios para la traza. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8h_source.html#l00047">47</a> del archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2828490b4be3dc5888d5df1649279c3" name="aa2828490b4be3dc5888d5df1649279c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2828490b4be3dc5888d5df1649279c3">&#9670;&#160;</a></span>RAISE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAISE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;res_raise_error(type, msg, LOC)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Llama a <code>res_raise_error</code> con los datos necesarios para la traza. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8h_source.html#l00049">49</a> del archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+
+</div>
+</div>
+<a id="a3c9c3aa7eb5c154e707a7694e2b44d9a" name="a3c9c3aa7eb5c154e707a7694e2b44d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9c3aa7eb5c154e707a7694e2b44d9a">&#9670;&#160;</a></span>NULL_RETURN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL_RETURN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">res, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;if(!(res)) return <a class="el" href="error_8h.html#aa2828490b4be3dc5888d5df1649279c3">RAISE</a>(type, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Si <code>res</code> es <code>NULL</code> entonces devuelve un error. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8h_source.html#l00051">51</a> del archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+
+</div>
+</div>
+<a id="a1454066c22e2ab9960b159380592fb18" name="a1454066c22e2ab9960b159380592fb18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1454066c22e2ab9960b159380592fb18">&#9670;&#160;</a></span>ERROR_RETURN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERROR_RETURN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">res</td><td>)</td>
+          <td>&#160;&#160;&#160;if(res_is_error(res)) return <a class="el" href="error_8h.html#afdf49a387c1ef7936e97d9be6cd8d84a">MAYBE_ERROR</a>(res)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Si <code>res</code> es un error entonces aborta la evaluación. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8h_source.html#l00053">53</a> del archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+
+</div>
+</div>
+<a id="a13bdd728bf40d6be44492616c7833964" name="a13bdd728bf40d6be44492616c7833964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13bdd728bf40d6be44492616c7833964">&#9670;&#160;</a></span>NULL_GOTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL_GOTO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">res, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ret, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tag&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { \</div>
+<div class="line">  if(!(res)) { (ret) = <a class="code hl_define" href="error_8h.html#aa2828490b4be3dc5888d5df1649279c3">RAISE</a>(type, msg); <span class="keywordflow">goto</span> tag; } \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="aerror_8h_html_aa2828490b4be3dc5888d5df1649279c3"><div class="ttname"><a href="error_8h.html#aa2828490b4be3dc5888d5df1649279c3">RAISE</a></div><div class="ttdeci">#define RAISE(type, msg)</div><div class="ttdoc">Llama a res_raise_error con los datos necesarios para la traza.</div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00049">error.h:49</a></div></div>
+</div><!-- fragment -->
+<p>Si <code>res</code> es <code>NULL</code>, asigna un error a <code>ret</code> y salta a <code>tag</code>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8h_source.html#l00055">55</a> del archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+
+</div>
+</div>
+<a id="a5c03746771726251d8b58be4877173e9" name="a5c03746771726251d8b58be4877173e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c03746771726251d8b58be4877173e9">&#9670;&#160;</a></span>ERROR_GOTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERROR_GOTO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">res, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ret, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tag&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> { \</div>
+<div class="line">  if(<a class="code hl_function" href="error_8h.html#a0c8c6fb94bf0ff138fb3887a9c83d8a5">res_is_error</a>(res)) { (ret) = <a class="code hl_define" href="error_8h.html#afdf49a387c1ef7936e97d9be6cd8d84a">MAYBE_ERROR</a>(res); <span class="keywordflow">goto</span> tag; } \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="aerror_8h_html_a0c8c6fb94bf0ff138fb3887a9c83d8a5"><div class="ttname"><a href="error_8h.html#a0c8c6fb94bf0ff138fb3887a9c83d8a5">res_is_error</a></div><div class="ttdeci">bool res_is_error(ResNode *node)</div><div class="ttdoc">Comprueba si un nodo resultado es un error.</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00026">error.c:26</a></div></div>
+<div class="ttc" id="aerror_8h_html_afdf49a387c1ef7936e97d9be6cd8d84a"><div class="ttname"><a href="error_8h.html#afdf49a387c1ef7936e97d9be6cd8d84a">MAYBE_ERROR</a></div><div class="ttdeci">#define MAYBE_ERROR(res)</div><div class="ttdoc">Llama a res_continue_error con los datos necesarios para la traza.</div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00047">error.h:47</a></div></div>
+</div><!-- fragment -->
+<p>Si <code>res</code> es un error, lo "continúa" en <code>ret</code> y salta a <code>tag</code>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8h_source.html#l00059">59</a> del archivo <a class="el" href="error_8h_source.html">error.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a8865b6f6b667beffbb275c557108abe4" name="a8865b6f6b667beffbb275c557108abe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8865b6f6b667beffbb275c557108abe4">&#9670;&#160;</a></span>res_free_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void res_free_error </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera la memoria de un nodo de error. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Puntero al nodo de error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8c_source.html#l00021">21</a> del archivo <a class="el" href="error_8c_source.html">error.c</a>.</p>
+
+</div>
+</div>
+<a id="ac90038c8569c3dfaf88a8086d6032e85" name="ac90038c8569c3dfaf88a8086d6032e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac90038c8569c3dfaf88a8086d6032e85">&#9670;&#160;</a></span>res_raise_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * res_raise_error </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ln</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea un nuevo error y muestra un mensaje asociado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Tipo de error </td></tr>
+    <tr><td class="paramname">msg</td><td>Descripción del error. La cadena debe ser dinámica. </td></tr>
+    <tr><td class="paramname">file</td><td>(debug) Nombre del archivo donde se invoca </td></tr>
+    <tr><td class="paramname">ln</td><td>(debug) Número de la línea en que se invoca </td></tr>
+    <tr><td class="paramname">fn</td><td>(debug) Nombre de la función en la que se invoca </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>El nuevo error</dd></dl>
+<p>Que <code>msg</code> sea dinámica permite omitir la liberación en la función invocadora y hacerla aquí. Esto para lograr líneas como:</p>
+<p>res_raise_error("Algún tipo", S("Alguna descripción"), LOC); </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8c_source.html#l00038">38</a> del archivo <a class="el" href="error_8c_source.html">error.c</a>.</p>
+
+</div>
+</div>
+<a id="a2121d1cabcb7b4183c745309a4af8e10" name="a2121d1cabcb7b4183c745309a4af8e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2121d1cabcb7b4183c745309a4af8e10">&#9670;&#160;</a></span>res_continue_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResNode * res_continue_error </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ln</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>"Continúa" un error y añade información a la traza. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Resultado que podría ser un error </td></tr>
+    <tr><td class="paramname">file</td><td>(debug) Nombre del archivo donde se invoca </td></tr>
+    <tr><td class="paramname">ln</td><td>(debug) Número de la línea en que se invoca </td></tr>
+    <tr><td class="paramname">fn</td><td>(debug) Nombre de la función en la que se invoca </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>r</code></dd></dl>
+<p>Esta función permite añadir detalles a la traza si <code>r</code> es un error. Facilitando la escritura de returns. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8c_source.html#l00048">48</a> del archivo <a class="el" href="error_8c_source.html">error.c</a>.</p>
+
+</div>
+</div>
+<a id="a0c8c6fb94bf0ff138fb3887a9c83d8a5" name="a0c8c6fb94bf0ff138fb3887a9c83d8a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8c6fb94bf0ff138fb3887a9c83d8a5">&#9670;&#160;</a></span>res_is_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool res_is_error </td>
+          <td>(</td>
+          <td class="paramtype">ResNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comprueba si un nodo resultado es un error. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Puntero al nodo </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="error_8c_source.html#l00026">26</a> del archivo <a class="el" href="error_8c_source.html">error.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5081caf4253f166c37035217032e821c.html">eval</a></li><li class="navelem"><a class="el" href="error_8h.html">error.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

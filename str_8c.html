@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/str.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('str_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo str.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación de utilidades para el manejo de cadenas.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="str_8h_source.html">str.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &quot;global.h&quot;</code><br />
+<code>#include &quot;log.h&quot;</code><br />
+</div>
+<p><a href="str_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ac780f133abc013fc7af85580151b3d8d"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#ac780f133abc013fc7af85580151b3d8d">no_quotes</a> (char *src)</td></tr>
+<tr class="memdesc:ac780f133abc013fc7af85580151b3d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina las comillas de una cadena.  <br /></td></tr>
+<tr class="separator:ac780f133abc013fc7af85580151b3d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008b6543eb6bbddb4d79a5de398c1b35"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a008b6543eb6bbddb4d79a5de398c1b35">str_dup</a> (const char *src)</td></tr>
+<tr class="memdesc:a008b6543eb6bbddb4d79a5de398c1b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplica una cadena de caracteres.  <br /></td></tr>
+<tr class="separator:a008b6543eb6bbddb4d79a5de398c1b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053779d17ca7088ca3c7fc5e932f6b03"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a053779d17ca7088ca3c7fc5e932f6b03">str_dup_no_quotes</a> (const char *src)</td></tr>
+<tr class="memdesc:a053779d17ca7088ca3c7fc5e932f6b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplica una cadena de caracteres eliminando las comillas iniciales y finales.  <br /></td></tr>
+<tr class="separator:a053779d17ca7088ca3c7fc5e932f6b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c10e9c08989d43880387258a1fd904"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#ac9c10e9c08989d43880387258a1fd904">str_concat</a> (char *source, const char *concat)</td></tr>
+<tr class="memdesc:ac9c10e9c08989d43880387258a1fd904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatena dos cadenas de caracteres.  <br /></td></tr>
+<tr class="separator:ac9c10e9c08989d43880387258a1fd904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6680f3c4ae8bf4352040c577040f44a4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a6680f3c4ae8bf4352040c577040f44a4">str_fmt</a> (const char *fmt,...)</td></tr>
+<tr class="memdesc:a6680f3c4ae8bf4352040c577040f44a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formatea una cadena según el formato especificado.  <br /></td></tr>
+<tr class="separator:a6680f3c4ae8bf4352040c577040f44a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f15cafeb61283635b69873fa228f8e7"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a0f15cafeb61283635b69873fa228f8e7">str_hash</a> (char *str)</td></tr>
+<tr class="memdesc:a0f15cafeb61283635b69873fa228f8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el hash de una cadena de caracteres.  <br /></td></tr>
+<tr class="separator:a0f15cafeb61283635b69873fa228f8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Implementación de utilidades para el manejo de cadenas. </p>
+
+<p class="definition">Definición en el archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="ac780f133abc013fc7af85580151b3d8d" name="ac780f133abc013fc7af85580151b3d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac780f133abc013fc7af85580151b3d8d">&#9670;&#160;</a></span>no_quotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * no_quotes </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Elimina las comillas de una cadena. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>La cadena fuente con comillas. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Un puntero a la nueva cadena sin comillas. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="str_8c_source.html#l00040">40</a> del archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+
+</div>
+</div>
+<a id="a008b6543eb6bbddb4d79a5de398c1b35" name="a008b6543eb6bbddb4d79a5de398c1b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008b6543eb6bbddb4d79a5de398c1b35">&#9670;&#160;</a></span>str_dup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * str_dup </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplica una cadena de caracteres. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>La cadena fuente a duplicar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Un puntero a la nueva cadena duplicada. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="str_8c_source.html#l00023">23</a> del archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+
+</div>
+</div>
+<a id="a053779d17ca7088ca3c7fc5e932f6b03" name="a053779d17ca7088ca3c7fc5e932f6b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053779d17ca7088ca3c7fc5e932f6b03">&#9670;&#160;</a></span>str_dup_no_quotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * str_dup_no_quotes </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplica una cadena de caracteres eliminando las comillas iniciales y finales. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Tareas pendientes:</a></b></dt><dd>No usada. Eliminar? </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="str_8c_source.html#l00031">31</a> del archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+
+</div>
+</div>
+<a id="ac9c10e9c08989d43880387258a1fd904" name="ac9c10e9c08989d43880387258a1fd904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c10e9c08989d43880387258a1fd904">&#9670;&#160;</a></span>str_concat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * str_concat </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatena dos cadenas de caracteres. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>La cadena inicial. </td></tr>
+    <tr><td class="paramname">b</td><td>La cadena a concatenar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Un puntero a la nueva cadena concatenada. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="str_8c_source.html#l00050">50</a> del archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+
+</div>
+</div>
+<a id="a6680f3c4ae8bf4352040c577040f44a4" name="a6680f3c4ae8bf4352040c577040f44a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6680f3c4ae8bf4352040c577040f44a4">&#9670;&#160;</a></span>str_fmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * str_fmt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Formatea una cadena según el formato especificado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fmt</td><td>La cadena de formato. </td></tr>
+    <tr><td class="paramname">...</td><td>Argumentos variables para el formato. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Un puntero a la nueva cadena formateada. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="str_8c_source.html#l00062">62</a> del archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+
+</div>
+</div>
+<a id="a0f15cafeb61283635b69873fa228f8e7" name="a0f15cafeb61283635b69873fa228f8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f15cafeb61283635b69873fa228f8e7">&#9670;&#160;</a></span>str_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned str_hash </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula el hash de una cadena de caracteres. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>La cadena de entrada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>El valor hash calculado. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="str_8c_source.html#l00076">76</a> del archivo <a class="el" href="str_8c_source.html">str.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="str_8c.html">str.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aleph: Referencia del Archivo src/ast/ast.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Aleph
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('ast_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo ast.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;../bison/loc.h&quot;</code><br />
+</div>
+<p><a href="ast_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ast__n.html">AstNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a9e2a50cb2a81e0326fd8d1e0c870d976"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a> { <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea">INT_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8">STR_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9">SET_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550">LST_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6">OR_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846">AND_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435">EQUAL_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743">LESS_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274">IN_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8">ELEM_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7">ADD_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779">SUB_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9">MUL_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb">DIV_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7">CALL_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1">NOT_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d">NEG_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5">LEN_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219">EXPR_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9">DECL_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3">ASSIGN_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e">INSERT_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e">RETURN_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7">DEL_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2">BREAK_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f">CONTINUE_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764">EXIT_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d">IF_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9">WHILE_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7">FOR_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e">FN_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755">ID_AST</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c">IFN_AST</a>
+, <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba">AST_LL</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9e2a50cb2a81e0326fd8d1e0c870d976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a7d08744a8ab62cd08ddbc0241328549b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a7d08744a8ab62cd08ddbc0241328549b">ast_enum_str</a> (<a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a> type)</td></tr>
+<tr class="separator:a7d08744a8ab62cd08ddbc0241328549b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb29d2f48ace5605ed51860b5c47d1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a9eb29d2f48ace5605ed51860b5c47d1d">ast_free</a> (AstNode *node)</td></tr>
+<tr class="separator:a9eb29d2f48ace5605ed51860b5c47d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e6e92ef475e94d5497bf8c5200c729"><td class="memItemLeft" align="right" valign="top">AstNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a53e6e92ef475e94d5497bf8c5200c729">ast_new_ll_n</a> (AstNode *elem, YYLTYPE loc)</td></tr>
+<tr class="separator:a53e6e92ef475e94d5497bf8c5200c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d624e05cc4750bef6e58f38dd042fcf"><td class="memItemLeft" align="right" valign="top">AstNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a8d624e05cc4750bef6e58f38dd042fcf">ast_add_next_ll_n</a> (AstNode *node_list, AstNode *elem)</td></tr>
+<tr class="memdesc:a8d624e05cc4750bef6e58f38dd042fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enlazar elemento (puede ser un nodo de lista) a un nodo de lista.  <br /></td></tr>
+<tr class="separator:a8d624e05cc4750bef6e58f38dd042fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb18f0cbc894c4e3f9d07c4bf2d0272a"><td class="memItemLeft" align="right" valign="top">AstNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#afb18f0cbc894c4e3f9d07c4bf2d0272a">ast_get_last_ll_n</a> (AstNode *node_list)</td></tr>
+<tr class="memdesc:afb18f0cbc894c4e3f9d07c4bf2d0272a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el último nodo de una lista de nodos.  <br /></td></tr>
+<tr class="separator:afb18f0cbc894c4e3f9d07c4bf2d0272a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004557edee6a5852f70a0fe19395cd69"><td class="memItemLeft" align="right" valign="top">AstNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a004557edee6a5852f70a0fe19395cd69">ast_reverse_ll</a> (AstNode *node_list)</td></tr>
+<tr class="memdesc:a004557edee6a5852f70a0fe19395cd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invierte el orden de una lista de nodos.  <br /></td></tr>
+<tr class="separator:a004557edee6a5852f70a0fe19395cd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b36c2527f9a2d52f151ee6a2d090df"><td class="memItemLeft" align="right" valign="top">AstNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a53b36c2527f9a2d52f151ee6a2d090df">ast_flatten_ll</a> (AstNode *ast_list)</td></tr>
+<tr class="memdesc:a53b36c2527f9a2d52f151ee6a2d090df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrae el elemento de sub-listas con un único elemento (devuelve una lista), eliminando anidamiento innecesario.  <br /></td></tr>
+<tr class="separator:a53b36c2527f9a2d52f151ee6a2d090df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f26c2f6b91e0f47e52fe04bea663c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#ab6f26c2f6b91e0f47e52fe04bea663c2">ast_is_ll</a> (AstNode *node)</td></tr>
+<tr class="memdesc:ab6f26c2f6b91e0f47e52fe04bea663c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">¿Es un nodo que puede enlazarse para formar listas?  <br /></td></tr>
+<tr class="separator:ab6f26c2f6b91e0f47e52fe04bea663c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d698685daa0916e639b6f2536dc01f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#ac6d698685daa0916e639b6f2536dc01f">ast_is_data</a> (AstNode *node)</td></tr>
+<tr class="separator:ac6d698685daa0916e639b6f2536dc01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225d01cb47314c83bfb0b246dfc9efc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a225d01cb47314c83bfb0b246dfc9efc0">ast_is_expr</a> (AstNode *node)</td></tr>
+<tr class="separator:a225d01cb47314c83bfb0b246dfc9efc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5068613c7b2c5dcff33a17d5941b4553"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a5068613c7b2c5dcff33a17d5941b4553">ast_is_stmt</a> (AstNode *node)</td></tr>
+<tr class="separator:a5068613c7b2c5dcff33a17d5941b4553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72df9f384bfe50110af33c49f399e6bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#a72df9f384bfe50110af33c49f399e6bb">ast_is_sym</a> (AstNode *node)</td></tr>
+<tr class="separator:a72df9f384bfe50110af33c49f399e6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83c090c653949b43f99b5116f6420a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8h.html#aa83c090c653949b43f99b5116f6420a0">ast_is_ifn</a> (AstNode *node)</td></tr>
+<tr class="separator:aa83c090c653949b43f99b5116f6420a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Especificación del nodo genérico del AST y sus operaciones. </p>
+
+<p class="definition">Definición en el archivo <a class="el" href="ast_8h_source.html">ast.h</a>.</p>
+</div><h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a9e2a50cb2a81e0326fd8d1e0c870d976" name="a9e2a50cb2a81e0326fd8d1e0c870d976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2a50cb2a81e0326fd8d1e0c870d976">&#9670;&#160;</a></span>AstNodeT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tipos de nodos del AST</p>
+<dl class="section warning"><dt>Atención</dt><dd>No confundir el tipo <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba" title="Nodo para listas del AST.">AST_LL</a> (para listas del AST) con el tipo <a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550" title="Nodo para listas.">LST_AST</a> (para listas de Aleph). </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea" name="a9e2a50cb2a81e0326fd8d1e0c870d976a1677f35b384254a77fb03328c2fb34ea"></a>INT_AST&#160;</td><td class="fielddoc"><p>Nodo para enteros. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8" name="a9e2a50cb2a81e0326fd8d1e0c870d976a00a836cbbfa1833771135666835658f8"></a>STR_AST&#160;</td><td class="fielddoc"><p>Nodo para átomos. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9" name="a9e2a50cb2a81e0326fd8d1e0c870d976a60d7beea0a98c0fe7e3d046dc26275b9"></a>SET_AST&#160;</td><td class="fielddoc"><p>Nodo para conjuntos. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550" name="a9e2a50cb2a81e0326fd8d1e0c870d976a47abed7029136a82e763216e44fca550"></a>LST_AST&#160;</td><td class="fielddoc"><p>Nodo para listas. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6" name="a9e2a50cb2a81e0326fd8d1e0c870d976ab8d61795109033a5a13ae53a4fed81d6"></a>OR_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>or</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846" name="a9e2a50cb2a81e0326fd8d1e0c870d976a1392f9c6b78049dca49c46b5dd2f1846"></a>AND_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>and</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435" name="a9e2a50cb2a81e0326fd8d1e0c870d976abff7aee9551be8b4f02bf1f140a30435"></a>EQUAL_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>==</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743" name="a9e2a50cb2a81e0326fd8d1e0c870d976a85a6016c72058db22f2d4e0d5b55c743"></a>LESS_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>&lt;</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274" name="a9e2a50cb2a81e0326fd8d1e0c870d976aef890e1b421a53243cd0ab5fa6917274"></a>IN_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>in</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8" name="a9e2a50cb2a81e0326fd8d1e0c870d976a2473372485e839fd1346e969d7bc63d8"></a>ELEM_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>[]</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7" name="a9e2a50cb2a81e0326fd8d1e0c870d976aa0a52daeb73750f931ebb86e6dc875d7"></a>ADD_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>+</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779" name="a9e2a50cb2a81e0326fd8d1e0c870d976a61724b9eed142615ae91416a05e8d779"></a>SUB_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>-</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9" name="a9e2a50cb2a81e0326fd8d1e0c870d976a8bfe8c0061f59d11456ed30abf8533e9"></a>MUL_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>*</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb" name="a9e2a50cb2a81e0326fd8d1e0c870d976aca8b4899845d7795c0257288f74024bb"></a>DIV_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>/</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7" name="a9e2a50cb2a81e0326fd8d1e0c870d976a49ab46179fe8cf7591cfe29f7e8bcba7"></a>CALL_AST&#160;</td><td class="fielddoc"><p>Nodo para llamadas. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1" name="a9e2a50cb2a81e0326fd8d1e0c870d976ad949f5ac55e257846e23a7cc3c3cd7c1"></a>NOT_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>not</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d" name="a9e2a50cb2a81e0326fd8d1e0c870d976ae8fc87b3089f705511a414e1a7fd967d"></a>NEG_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>-</code> (unario) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5" name="a9e2a50cb2a81e0326fd8d1e0c870d976a366e209c0fbb2234453b1210a8d381e5"></a>LEN_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>len</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219" name="a9e2a50cb2a81e0326fd8d1e0c870d976a1eae2095fabd1155172b629042dc2219"></a>EXPR_AST&#160;</td><td class="fielddoc"><p>Nodo para expresiones. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9" name="a9e2a50cb2a81e0326fd8d1e0c870d976addc4c63c2a070336f050b3b5f7ad66d9"></a>DECL_AST&#160;</td><td class="fielddoc"><p>Nodo para declaraciones. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3" name="a9e2a50cb2a81e0326fd8d1e0c870d976a10b579b2ae273abb84fca61d226849f3"></a>ASSIGN_AST&#160;</td><td class="fielddoc"><p>Nodo para asignaciones. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e" name="a9e2a50cb2a81e0326fd8d1e0c870d976aa9ca5b13b660ab12c2b408c208a3015e"></a>INSERT_AST&#160;</td><td class="fielddoc"><p>Nodo para inserción. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e" name="a9e2a50cb2a81e0326fd8d1e0c870d976aa6805d11af38d6ce5c4c7ff0b499213e"></a>RETURN_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>return</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7" name="a9e2a50cb2a81e0326fd8d1e0c870d976a5cc412d9cfdb20f5f3ada55920ed49d7"></a>DEL_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>del</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2" name="a9e2a50cb2a81e0326fd8d1e0c870d976a5a79ccd4f4a6dd04be7e941c6fc5b2b2"></a>BREAK_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>break</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f" name="a9e2a50cb2a81e0326fd8d1e0c870d976a6ee1ef416fb5326ac0b141899c35d87f"></a>CONTINUE_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>continue</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764" name="a9e2a50cb2a81e0326fd8d1e0c870d976a349b20717885a5580286546c15726764"></a>EXIT_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>exit</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d" name="a9e2a50cb2a81e0326fd8d1e0c870d976aa48d8e84257d6186693e41643715925d"></a>IF_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>if</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9" name="a9e2a50cb2a81e0326fd8d1e0c870d976a690bb73cd08320a9bf7caa28b08cb9b9"></a>WHILE_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>while</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7" name="a9e2a50cb2a81e0326fd8d1e0c870d976a188db88506adcfee3eaa7e53bacf4cf7"></a>FOR_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>for</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e" name="a9e2a50cb2a81e0326fd8d1e0c870d976af91a2023ccf2d6586d5db059ed74ba9e"></a>FN_AST&#160;</td><td class="fielddoc"><p>Nodo para <code>fn</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755" name="a9e2a50cb2a81e0326fd8d1e0c870d976a019b8d5f26a51e65c4cbb60ae36bc755"></a>ID_AST&#160;</td><td class="fielddoc"><p>Nodo para identificadores. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c" name="a9e2a50cb2a81e0326fd8d1e0c870d976a5c013e69a5a7a8f3dd12e56bd0dfbb3c"></a>IFN_AST&#160;</td><td class="fielddoc"><p>Nodo para <em>in-built functions</em> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba" name="a9e2a50cb2a81e0326fd8d1e0c870d976aa2e5d695302e612f4cc1d19f77d57eba"></a>AST_LL&#160;</td><td class="fielddoc"><p>Nodo para listas del AST. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8h_source.html#l00017">17</a> del archivo <a class="el" href="ast_8h_source.html">ast.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a7d08744a8ab62cd08ddbc0241328549b" name="a7d08744a8ab62cd08ddbc0241328549b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d08744a8ab62cd08ddbc0241328549b">&#9670;&#160;</a></span>ast_enum_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * ast_enum_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ast_8h.html#a9e2a50cb2a81e0326fd8d1e0c870d976">AstNodeT</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00017">17</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a9eb29d2f48ace5605ed51860b5c47d1d" name="a9eb29d2f48ace5605ed51860b5c47d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb29d2f48ace5605ed51860b5c47d1d">&#9670;&#160;</a></span>ast_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ast_free </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00057">57</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a53e6e92ef475e94d5497bf8c5200c729" name="a53e6e92ef475e94d5497bf8c5200c729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e6e92ef475e94d5497bf8c5200c729">&#9670;&#160;</a></span>ast_new_ll_n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AstNode * ast_new_ll_n </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">YYLTYPE&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crea un nodo que puede ser enlazado para formar listas.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elem</td><td>Dato del nodo No puede ser <code>NULL</code>. </td></tr>
+    <tr><td class="paramname">loc</td><td>Ubicación en el código. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero al nuevo nodo. <code>NULL</code> en caso de error. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00142">142</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a8d624e05cc4750bef6e58f38dd042fcf" name="a8d624e05cc4750bef6e58f38dd042fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d624e05cc4750bef6e58f38dd042fcf">&#9670;&#160;</a></span>ast_add_next_ll_n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AstNode * ast_add_next_ll_n </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enlazar elemento (puede ser un nodo de lista) a un nodo de lista. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00154">154</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="afb18f0cbc894c4e3f9d07c4bf2d0272a" name="afb18f0cbc894c4e3f9d07c4bf2d0272a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb18f0cbc894c4e3f9d07c4bf2d0272a">&#9670;&#160;</a></span>ast_get_last_ll_n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AstNode * ast_get_last_ll_n </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve el último nodo de una lista de nodos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00165">165</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a004557edee6a5852f70a0fe19395cd69" name="a004557edee6a5852f70a0fe19395cd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004557edee6a5852f70a0fe19395cd69">&#9670;&#160;</a></span>ast_reverse_ll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AstNode * ast_reverse_ll </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invierte el orden de una lista de nodos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00173">173</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a53b36c2527f9a2d52f151ee6a2d090df" name="a53b36c2527f9a2d52f151ee6a2d090df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b36c2527f9a2d52f151ee6a2d090df">&#9670;&#160;</a></span>ast_flatten_ll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AstNode * ast_flatten_ll </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>ast_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extrae el elemento de sub-listas con un único elemento (devuelve una lista), eliminando anidamiento innecesario. </p>
+<p>Ejemplo: </p><pre class="fragment">((((a)))) =&gt; (a), (a,b,((b,2))) =&gt; (a,b,(b,2))
+</pre><p> Si la lista tiene solo un elemento, lo devuelve y libera el nodo. Sino, devuelve la lo pasado como argumento (de qué función es esto?) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00198">198</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="ab6f26c2f6b91e0f47e52fe04bea663c2" name="ab6f26c2f6b91e0f47e52fe04bea663c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f26c2f6b91e0f47e52fe04bea663c2">&#9670;&#160;</a></span>ast_is_ll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ast_is_ll </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>¿Es un nodo que puede enlazarse para formar listas? </p>
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00112">112</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="ac6d698685daa0916e639b6f2536dc01f" name="ac6d698685daa0916e639b6f2536dc01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d698685daa0916e639b6f2536dc01f">&#9670;&#160;</a></span>ast_is_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ast_is_data </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00117">117</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a225d01cb47314c83bfb0b246dfc9efc0" name="a225d01cb47314c83bfb0b246dfc9efc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225d01cb47314c83bfb0b246dfc9efc0">&#9670;&#160;</a></span>ast_is_expr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ast_is_expr </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00122">122</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a5068613c7b2c5dcff33a17d5941b4553" name="a5068613c7b2c5dcff33a17d5941b4553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5068613c7b2c5dcff33a17d5941b4553">&#9670;&#160;</a></span>ast_is_stmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ast_is_stmt </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00127">127</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="a72df9f384bfe50110af33c49f399e6bb" name="a72df9f384bfe50110af33c49f399e6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72df9f384bfe50110af33c49f399e6bb">&#9670;&#160;</a></span>ast_is_sym()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ast_is_sym </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00132">132</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+<a id="aa83c090c653949b43f99b5116f6420a0" name="aa83c090c653949b43f99b5116f6420a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83c090c653949b43f99b5116f6420a0">&#9670;&#160;</a></span>ast_is_ifn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ast_is_ifn </td>
+          <td>(</td>
+          <td class="paramtype">AstNode *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="ast_8c_source.html#l00137">137</a> del archivo <a class="el" href="ast_8c_source.html">ast.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_203e5988f1ed315d29383d699972de6f.html">ast</a></li><li class="navelem"><a class="el" href="ast_8h.html">ast.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
