@@ -1,0 +1,29 @@
+// Prueba de for
+for n in [5, 4, 3, 2, 1] {
+  println(n)
+}
+println()
+
+for e in {5, 4, 3, 2, 1} {
+  println(e)
+}
+println()
+
+for e in ['uno', 'dos', 'tres'] {
+  println(_i, ': ', e)
+}
+println()
+
+let e = ['a', 'b', 'c']
+for e in e {
+  println(e)
+}
+println()
+
+fn ret() {
+  for e in ['x', 'y', 'z'] {
+    if e == 'y' { return e }
+  }
+}
+
+println(ret())

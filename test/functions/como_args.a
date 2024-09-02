@@ -1,0 +1,18 @@
+// Pasar funciones como argumento
+
+fn map(f, iter) {
+  let new = []
+  for e in iter {
+    new += [f(e)]
+  }
+  return new
+}
+
+fn doble(elem) { return elem * 2 }
+
+let lista = [1, 2, 3, 4]
+
+let dobles = map(doble, lista)
+
+println(dobles)
+///[2, 4, 6, 8]

@@ -1,0 +1,18 @@
+// Pruebas de cadenas
+
+println('')
+///
+println("")
+///
+println("abcd")
+///abcd
+println('1234')
+///1234
+println('""')
+///""
+println('"')
+///"
+println("''")
+///''
+println("'")
+///'

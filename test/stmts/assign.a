@@ -1,0 +1,22 @@
+// Prueba la sentencia de asignación
+let a, b, c = 0, 10, 100
+println(a, b, c)
+///010100
+let l1, l2, l3 = [0], [10], [100]
+println(l1, l2, l3)
+///[0][10][100]
+a, b, c = c, b, a
+println(a, b, c)
+///100100
+l1[1], l2[1], l3[1] = l3[1], l2[1], l1[1]
+println(l1, l2, l3)
+///[100][10][0]
+a, b, c += 1, 1, 1
+println(a, b, c)
+///101111
+l1[1], l2[1], l3[1] += 1, 1, 1
+println(l1, l2, l3)
+///[101][11][1]
+l1[1], b, l3[1] += 1, 1, 1
+println(l1, b, l3)
+///[102]12[2]

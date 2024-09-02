@@ -1,0 +1,51 @@
+// Prueba de estructuras de control
+
+if 1 {
+  println('true')
+}
+
+if 1 {
+  println('true')
+} else {
+  println('false')
+}
+
+if 0 {
+  println('true')
+} else {
+  println('false')
+}
+
+if 1 {
+  println('true')
+} elif 1 {
+  println('false - true')
+} else {
+  println('false - false')
+}
+
+if 0 {
+  println('true')
+} elif 1 {
+  println('false - true')
+} else {
+  println('false - false')
+}
+
+if 0 {
+  println('true')
+} elif 0 {
+  println('false - true')
+} else {
+  println('false - false')
+}
+
+if 0 {
+  println('true')
+} elif 0 {
+  println('false - true')
+} elif 1 {
+  println('false - false - true')
+} else {
+  println('false - false - false')
+}

@@ -1,0 +1,4 @@
+// Funcionalidades varias
+
+println('El numero es ', 1, ' ', 'xd')
+///El numero es 1 xd

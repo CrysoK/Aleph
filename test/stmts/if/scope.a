@@ -1,0 +1,21 @@
+// Prueba de scopes
+let a = 'fuera del if'
+println(a)
+
+if 1 {
+  let a = 'dentro del primer if'
+  println(a)
+
+  if 1 {
+    let a = "dentro del segundo if"
+    println(a)
+
+    if 1 {
+      let a = "dentro del tercer if"
+      println(a)
+    }
+    println(a)
+  }
+  println(a)
+}
+println(a)

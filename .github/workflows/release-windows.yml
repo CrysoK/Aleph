@@ -1,0 +1,26 @@
+name: release-windows
+run-name: Adjuntando binario a ${{ github.event.release.tag_name }}
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload:
+    name: Upload release binary
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore binary
+        uses: actions/cache/restore@v4
+        with:
+          path: aleph.exe
+          key: aleph-${{ hashFiles('src/**/*.[chyl]', 'Makefile') }}
+          fail-on-cache-miss: true
+
+      - name: Upload binary
+        uses: AButler/upload-release-assets@v3.0
+        with:
+          files: "aleph.exe"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

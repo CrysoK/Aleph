@@ -1,0 +1,24 @@
+// Pruebas de números enteros
+
+// Carga
+println(1)
+println(0)
+println(1234567890)
+println(-0123456789)
+
+// Suma
+println(1 + 1)
+println(2 + 10 + 132)
+println(321 + 4 + 91 + 000)
+
+// Resta
+println(1 - 1)
+println(21 - 123 - 545)
+println(0 - 64 - 5490)
+
+// División
+println(8 / 2)
+println(9 / 4)
+println(130 / 2 / 5)
+
+println('Fin')

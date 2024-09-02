@@ -1,0 +1,14 @@
+// Prueba de número de argumentos variable
+
+fn my_print(title, ...) {
+  println(title)
+  for arg in _args {
+    println(arg)
+  }
+}
+
+my_print("Titulo", 1, 2, 3)
+///Titulo
+///1
+///2
+///3

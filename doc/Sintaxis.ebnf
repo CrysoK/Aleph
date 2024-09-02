@@ -1,0 +1,37 @@
+<program> ::= <stmt_list> <eos>
+<stmt_list> ::= <stmt_list> <eos> <stmt> | <stmt>
+<eos> ::= EOL | ";"
+<stmt> ::= <decl> | <assign> | <del> | <insert> | <if> | <for> | <while>
+        | <fn> | <expr> | "exit" | "break" | "continue" | <return> |
+<block> ::= "{" <stmt_list> "}"
+<fn> ::= "fn" ID "(" <params> ")" <block>
+<params> ::= <id_list> | <id_list> "," "..." | "..." |
+<if> ::= "if" <expr> <block> <elif>
+<elif> ::= "elif" <expr> <block> <elif> | "else" <block> |
+<for> ::= "for" ID "in" <expr> <block>
+<while> ::= "while" <expr> <block>
+<decl> ::= "let" <id_list> | "let" <id_list> "=" <expr_list>
+<assign> ::= <assignable_list> <assign_op> <expr_list>
+<assignable_list> ::= <assignable_list> "," <assignable> | <assignable>
+<assignable> ::= ID | <elem>
+<insert> ::= <primary> "[" "!" <expr> "]" "=" <expr>
+          | <primary> "[" <expr> "!" "]" "=" <expr>
+<id_list> ::= <id_list> "," ID | ID
+<expr_list> ::= <expr_list> "," <expr> | <expr>
+<assign_op> ::= "=" | "+=" | "-=" | "*=" | "/="
+<del> ::= "del" <expr>
+<return> ::= "return" <expr> | "return"
+<expr> ::= <expr> "or" <and> | <and>
+<and> ::= <and> "and" <not> | <not>
+<not> ::= "not" <not> | <cmp>
+<cmp> ::= <cmp> "==" <sum> | <cmp> "!=" <sum> | <cmp> "<" <sum>
+        | <cmp> ">" <sum> | <cmp> "<=" <sum> | <cmp> ">=" <sum>
+        | <cmp> "not" "in" <sum> | <cmp> "in" <sum> | <sum>
+<sum> ::= <sum> "+" <term> | <sum> "-" <term> | <term>
+<term> ::= <term> "*" <factor> | <term> "/" <factor> | <factor>
+<factor> ::= "-" <factor> | "#" <primary> | <primary>
+<primary> ::= "(" <expr> ")" | <call> | <elem> | ID | INT_LIT
+            | ATOM_LIT | "[" <args> "]" | "{" <args> "}"
+<call> ::= <primary> "(" <args> ")"
+<args> ::= <expr_list> |
+<elem> ::= <primary> "[" <expr> "]"

@@ -1,0 +1,51 @@
+// Conversión de AFND a AFD
+
+fn afnd2afd(afnd) {
+  let afnd_E = copy(afnd[2])
+  let afnd_D = copy(afnd[3])
+  let afnd_q0 = copy(afnd[4])
+  let afnd_F = copy(afnd[5])
+
+  // Inicia el algoritmo
+  let afd_q0 = {afnd_q0}
+  let afd_Q = [afd_q0]
+  let afd_D = {}
+  let afd_F = {}
+  // Por cada estado que se va encontrando
+  for state in afd_Q {
+    for symbol in afnd_E {
+      let new_state = {}
+      // Se busca en afnd_D las transiciones que parten de los elementos de state
+      for trans in afnd_D {
+        for e in state {
+          // Si se halla una transición, añadir los estados destino
+          if trans[1] == e and trans[2] == symbol {
+            new_state += trans[3]
+          }
+        }
+      }
+      let new_trans = [state, symbol, {new_state}]
+      afd_D += {new_trans}
+      // Si el estado destino no está en afd_Q, se añade
+      if new_state != {} and new_state not in afd_Q {
+        afd_Q += [new_state]
+      }
+    }
+    // Si la intersección entre state y afnd_F no es vacía, state se añade a afd_F
+    if afnd_F * state != {} {
+      afd_F += {state}
+    }
+  }
+  afd_Q = set(afd_Q)
+  return [afd_Q, afnd_E, afd_D, afd_q0, afd_F]
+}
+
+let afnd = [{"q0","q1","q2"},{"0","1"},{["q0","0",{"q0","q1"}],["q0","1",{"q0"}],["q1","0",{}],["q1","1",{"q2"}],["q2","0",{}],["q2","1",{}]},"q0",{"q0","q2"}]
+let afd = afnd2afd(afnd)
+
+println(afd)
+///[{{'q0'}, {'q0', 'q1'}, {'q0', 'q2'}}, {'0', '1'}, {[{'q0'}, '0', {{'q0', 'q1'}}], [{'q0'}, '1', {{'q0'}}], [{'q0', 'q1'}, '0', {{'q0', 'q1'}}], [{'q0', 'q1'}, '1', {{'q0', 'q2'}}], [{'q0', 'q2'}, '0', {{'q0', 'q1'}}], [{'q0', 'q2'}, '1', {{'q0'}}]}, {'q0'}, {{'q0'}, {'q0', 'q1'}, {'q0', 'q2'}}]
+
+// o:
+
+// [{'{q0}', '{q0,q1}', '{q0,q2}'}, {'0', '1'}, {['{q0}', '0', {'{q0,q1}'}], ['{q0}', '1', {'{q0}'}], ['{q0,q1}', '0', {'{q0,q1}'}], ['{q0,q1}', '1', {'{q0,q2}'}], ['{q0,q2}', '0', {'{q0,q1}'}], ['{q0,q2}', '1', {'{q0}'}]}, '{q0}', {'{q0}', '{q0,q1}', '{q0,q2}'}]

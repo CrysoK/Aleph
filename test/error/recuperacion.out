@@ -1,0 +1,17 @@
+ERROR [Sintaxis] (test/error/recuperacion.a:3:23): Inesperado: identificador. Se esperaba: fin de línea, ';', '}'.
+Bien A 1/2
+Mal? A 1/2
+Bien A 2/2
+ERROR [Sintaxis] (test/error/recuperacion.a:7:23): Inesperado: fin de línea.
+Bien B 1/1
+Mal? C 1/2
+ERROR [Sintaxis] (test/error/recuperacion.a:11:23): Inesperado: identificador. Se esperaba: fin de línea, ';'.
+Bien C 1/2
+Bien C 2/2
+Mal? D 1/3
+ERROR [Sintaxis] (test/error/recuperacion.a:14:23): Inesperado: identificador. Se esperaba: fin de línea, ';'.
+Mal? D 3/3
+Bien D 1/3
+Bien D 2/3
+Bien D 3/3
+AVISO: 4 errores encontrados

@@ -1,0 +1,13 @@
+// EL GC rompe la asignación múltiple
+let a, b = "a", "b"
+println(a, b)
+///ab
+a, b = b, a
+println(a, b)
+///ba
+a, b = b, a
+println(a, b)
+///ab
+a, b = b, a
+println(a, b)
+///ba

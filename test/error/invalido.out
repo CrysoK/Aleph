@@ -1,0 +1,14 @@
+ERROR [Sintaxis] (test/error/invalido.a:1:1): Uno o más caracteres inválidos (no ASCII)
+ERROR [Sintaxis] (test/error/invalido.a:2:1): Inesperado: '+'. Se esperaba: fin de línea, ';'.
+ERROR [Sintaxis] (test/error/invalido.a:3:2): Inesperado: identificador. Se esperaba: fin de línea, ';'.
+ERROR [Sintaxis] (test/error/invalido.a:4:1): Uno o más caracteres inválidos (no ASCII)
+ERROR [Sintaxis] (test/error/invalido.a:5:1): Inesperado: '!'. Se esperaba: fin de línea, ';'.
+ERROR [Símbolo] (test/error/invalido.a:7:3): Símbolo 'b' no declarado
+ERROR [Sintaxis] (test/error/invalido.a:8:7): Re-declaración del símbolo 'a'
+1
+2
+ERROR [Sintaxis] (test/error/invalido.a:9:24): Inesperado: identificador. Se esperaba: fin de línea, ';'.
+1
+ERROR [Sintaxis] (test/error/invalido.a:10:12): Inesperado: identificador. Se esperaba: fin de línea, ';'.
+4
+AVISO: 9 errores encontrados

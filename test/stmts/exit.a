@@ -1,0 +1,19 @@
+// Prueba la sentencia `exit`
+fn e() {
+  println("Saliendo...");
+  exit;
+  println("Inalcanzable")
+  return 1
+}
+
+fn doble(x) { return x * 2 }
+
+fn main() {
+  println("A")
+  println([1] + [doble(e())])
+  println("B")
+}
+
+main()
+///A
+///Saliendo...

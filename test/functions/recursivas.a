@@ -1,0 +1,28 @@
+// Prueba la capacidad de recursividad en funciones
+
+fn Fib(n) {
+  if n > 1 {
+    return Fib(n - 2) + Fib(n - 1)
+  } else {
+    return n
+  }
+}
+
+let i = 0
+while i < 20 {
+  println(Fib(i))
+  i += 1
+}
+
+//fn print_n_veces(x, n) {
+//  if n > 0 {
+//    println(x)
+//    print_n_veces(x, n - 1)
+//    println('fin')
+//  }
+//}
+//
+//print_n_veces('3', 3)
+//print_n_veces('0', 0)
+//print_n_veces('1', 1)
+//print_n_veces('-1', -1)

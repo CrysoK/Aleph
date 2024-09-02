@@ -1,0 +1,11 @@
+// Programa inválido (debe dar error)
+¿ 3 // invalid token
++ // + inesperado
+1_2 // _ inesperado
+¡ // invalid token
+! // ! inesperado
+let a
+b // no declarado
+let a // re-declaración
+println(1); println(2) println(3) println(4) // id inesperado
+println(1) println(2) println(3); println(4) // id inesperado

@@ -1,0 +1,8 @@
+// Prueba de while
+let a = 0
+while(a < 10) {
+  println(a)
+  a = a + 1
+  let a = 10 // esto no debería afectar la condición
+  println(a)
+}

@@ -1,0 +1,20 @@
+// ERROR: No se puede definir una función en un bloque.
+
+fn crearContador() {
+  let i = 0
+  fn contar() {
+    i += 1
+    println(i)
+  }
+  return contar
+}
+///ERROR [Sintaxis] (test/error/closure.a:7:3): Definición de función dentro de un bloque
+///ERROR [Símbolo] (test/error/closure.a:12:31): Símbolo 'contar' no declarado
+let contador = crearContador()
+contador()
+contador()
+contador()
+///ERROR [Símbolo] (test/error/closure.a:13:11): Símbolo 'contador' no declarado
+///ERROR [Símbolo] (test/error/closure.a:14:11): Símbolo 'contador' no declarado
+///ERROR [Símbolo] (test/error/closure.a:15:11): Símbolo 'contador' no declarado
+///AVISO: 5 errores encontrados

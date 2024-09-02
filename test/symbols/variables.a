@@ -1,0 +1,12 @@
+// Pruebas de variables
+
+let a
+a = 1
+a
+println(a)
+///1
+
+let b = 2
+b
+println(b)
+///2

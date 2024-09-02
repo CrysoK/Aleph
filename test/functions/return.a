@@ -1,0 +1,21 @@
+// Prueba la sentencia return
+
+fn a() {
+  return 1
+}
+println(a())
+///1
+fn b() {
+  let c = a()
+  return 1 + a()
+}
+println(b())
+///2
+fn c() {
+  let d = a() + b()
+  d += 1
+  return d + b()
+  return -1
+}
+println(c())
+///6
