@@ -193,7 +193,6 @@ ResNode *eval_decl(AstNode *ast_node) {
     "Sintaxis", S("Cantidad de identificadores y de expresiones distinta")
   );
 }
-
 /**
  * La asignación tiene la forma:
  *
@@ -261,7 +260,6 @@ ResNode *eval_assign_to_id(AstNode *sym, ResNode *value, AstNodeT a_type) {
   garbage_collect(prev);
   return NULL; // Éxito
 }
-
 /**
  * @brief Asignación a un elemento de una lista.
  *
@@ -308,7 +306,6 @@ ResNode *eval_assign_to_elem(AstNode *ast_node, ResNode *value, AstNodeT a_type)
   res_free(list);
   return MAYBE_ERROR(r);
 }
-
 /**
  * @brief Asignación "aumentada" o compuesta.
  *
@@ -405,7 +402,14 @@ ResNode *eval_insert(AstNode *ast_node) {
   res_free(list);
   return MAYBE_ERROR(r);
 }
-
+/**
+ * Primero se evalúa la condición fuera del alcance del bloque. Su resultado se
+ * convierte a un valor lógico (ver @ref bool_cast). Se crea el alcance para el
+ * bloque, se evalúa la lista de sentencias correspondiente al valor lógico y se
+ * abandona el alcance creado. Finalmente se devuelve el resultado, que podría
+ * ser `NULL`, un error o alguna interrupción (`return`, `break`, `continue`,
+ * `exit`).
+ */
 ResNode *eval_if(AstNode *if_ast) {
   DBG_FN_START;
   NULL_RETURN(if_ast, "Interno", S("if_ast == NULL"));
@@ -423,7 +427,25 @@ ResNode *eval_if(AstNode *if_ast) {
   scope_pop();
   return MAYBE_ERROR(r);
 }
-
+/**
+ * El primer paso es evaluar la condición y obtener su valor lógico (ver @ref
+ * bool_cast). Si es falso, el ciclo se detiene y se devuelve `NULL` indicando
+ * que no hubo interrupciones ni errores. SI es verdadero, se crea el alcance
+ * del bloque y se evalúa la lista de sentencias. Al terminar, se elimina el
+ * alcance creado y se analiza el resultado.
+ *
+ * - Si la lista de sentencias devuelve `NULL`, no hubo errores ni interrupciones,
+ * por lo que el ciclo continúa.
+ * - Si devuelve un error, el ciclo se detiene y el error se propaga al
+ *   exterior.
+ * - Si devuelve un `break` entonces se libera, para evitar que afecte a ciclos
+ *   exteriores, y el ciclo se detiene.
+ * - Si devuelve un `return` o `exit`, el ciclo se detiene y el resultado se
+ *   propaga al exterior. `return` debe detener la ejecución de la función que
+ *   "envuelve" al ciclo y `exit` debe detener la ejecución de todo el programa.
+ * - En cualquier otro caso, incluyendo `continue`, se libera el resultado y se
+ *   pasa a la siguiente iteración.
+ */
 ResNode *eval_while(AstNode *while_ast) {
   DBG_FN_START;
   NULL_RETURN(while_ast, "Interno", S("while_ast == NULL"));
@@ -468,8 +490,33 @@ ResNode *eval_while(AstNode *while_ast) {
   }
   return MAYBE_ERROR(r);
 }
-
-// a = id, b = iter, c = stmts
+/**
+ * La sentencia tiene la forma:
+ *
+ *     for id in iter block
+ *         a     b    c
+ *
+ * Para comenzar, se evalúa la expresión que resultará en una lista o un
+ * conjunto de elementos para recorrer y se verifica que efectivamente sea un
+ * iterable.
+ *
+ * Puede ocurrir que no sea referenciado en ningún lugar fuera del encabezado
+ * del `for`, por lo que se incrementa su `refcnt` para evitar que sus elementos
+ * sean liberados al final de cada iteración.
+ *
+ * Antes de evaluar la lista de sentencias se crea un nuevo alcance.
+ *
+ * Si el iterable es una lista, se declara un símbolo especial `_i` con el
+ * índice del elemento actual.
+ *
+ * Se crea el símbolo con el elemento actual y se evalúa el cuerpo del `for`. Al
+ * terminar, se elimina el alcance del bloque.
+ *
+ * El análisis del resultado es exactamente igual al de @ref eval_while.
+ *
+ * Antes de finalizar el `for` se decrementa el `refcnt` del iterable y se
+ * libera si no posee más referencias.
+ */
 ResNode *eval_for(AstNode *for_ast) {
   DBG_FN_START;
   NULL_RETURN(for_ast, "Interno", S("for_ast == NULL"));
@@ -522,11 +569,19 @@ ResNode *eval_for(AstNode *for_ast) {
   res_free(iter);
   return MAYBE_ERROR(r);
 }
-
 /**
  * La sentencia tiene la forma:
  *
  *     fn id(params) block
+ *
+ * La evaluación es simplemente declarar un símbolo con el identificador de la
+ * función y asignarle como valor un dato de tipo `fn`, que no es más que un
+ * "envoltorio" para el AST de la definición.
+ *
+ * Si el agregado del símbolo falla, se libera el dato de tipo `fn` y se propaga
+ * el error.
+ *
+ * Para llamadas ver @ref eval_fncall.
 */
 ResNode *eval_fndef(AstNode *fn_def_ast) {
   DBG_FN_START;

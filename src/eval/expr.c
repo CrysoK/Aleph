@@ -1,3 +1,7 @@
+/**
+ * @file
+ * @brief Implementación de la evaluación de expresiones.
+*/
 #include "expr.h"
 
 #include <stddef.h>
@@ -20,6 +24,15 @@ static ResNode *eval_expr_a(AstNode *ast);
 static ResNode *eval_expr_b(AstNode *ast);
 static ResNode *eval_expr_x(AstNode *ast);
 static bool valid_operand(ResNode *node);
+/**
+ * @brief Asigna los argumentos de la llamada a su correspondiente parámetro.
+ * @param args Argumentos de la llamada.
+ * @param fndef_ast AST de la definición de la función.
+ * @param a_cnt Cantidad de argumentos.
+ * @param fname Nombre de la función.
+ * @return `NULL` o `ResErrorN`.
+ */
+ResNode *eval_fncall_params(ResNode *args, AstNode *fndef_ast, int a_cnt, char *fname);
 
 // No devuelve `NULL`
 ResNode *eval_expr(AstNode *node) {
@@ -325,7 +338,14 @@ ResNode *eval_div(AstNode *div_ast) {
   free_a: res_free(a);
   return MAYBE_ERROR(r);
 }
-ResNode *eval_fncall_params(ResNode *args, AstNode *fndef_ast, int a_cnt, char *fname);
+/**
+ * Se crea un símbolo para cada parámetro y asigna como valor al argumento
+ * correspondiente. También reporta detalladamente el error si la cantidad de
+ * argumentos no coincide con los requeridos.
+ *
+ * El parámetro especial `...` permite recibir un número variable de argumentos.
+ * Estos se guardan en el símbolo especial `_args` como una lista.
+ */
 ResNode *eval_fncall_params(
   ResNode *args, AstNode *fndef_ast, int a_cnt, char *fname
 ) {
@@ -369,7 +389,25 @@ ResNode *eval_fncall_params(
   }
   return r;
 }
-
+/**
+ * Primero se evalúa el símbolo de la función para obtener el AST de su
+ * definición, luego de asegurarse de que efectivamente lo sea.
+ *
+ * Después se evalúa la lista de expresiones que conforman los argumentos. Si no
+ * hay errores, se procede a guardar el ámbito en el que se realiza la llamada y
+ * se establece el ámbito global como actual.q
+ *
+ * Se crea un ámbito local para la función y se asignan los argumentos a su
+ * respectivo parámetro (ver @ref eval_fncall_params).
+ *
+ * Lo siguiente es evaluar la lista de sentencias del cuerpo de la función . Al
+ * terminar, se elimina el alcance local y se regresa al ámbito donde se hizo la
+ * llamada.
+ *
+ * Finalmente se analiza el resultado: si es un `return`, se devuelve el dato
+ * que contiene; si es un `exit` o un error, se propaga; y en cualquier otro
+ * caso, se devuelve nulo, representado por un nodo de tipo `VOID_R`.
+ */
 ResNode *eval_fncall(AstNode *fncall_ast) {
   DBG_FN_START;
   NULL_RETURN(fncall_ast, "Interno", S("fncall_ast == NULL"));

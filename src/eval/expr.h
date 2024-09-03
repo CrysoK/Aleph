@@ -22,6 +22,11 @@ ResNode *eval_add(AstNode *node);
 ResNode *eval_sub(AstNode *node);
 ResNode *eval_mul(AstNode *node);
 ResNode *eval_div(AstNode *node);
+/**
+ * @brief Evalúa una llamada a una función.
+ * @param node AST de una llamada a una función.
+ * @return Dato (entero, lista, etc), `VOID_R`, `EXIT_R` o `ResErrorN`.
+ */
 ResNode *eval_fncall(AstNode *node);
 
 // Operaciones /////////////////////////////////////////////////////////////////
