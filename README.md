@@ -1,5 +1,6 @@
 # Aleph
 
+[![wakatime](https://wakatime.com/badge/github/CrysoK/Aleph.svg)](https://wakatime.com/badge/github/CrysoK/Aleph)
 [![build-windows](https://github.com/CrysoK/Aleph/actions/workflows/build-windows.yml/badge.svg)](https://github.com/CrysoK/Aleph/actions/workflows/build-windows.yml)
 [![test-windows](https://github.com/CrysoK/Aleph/actions/workflows/test-windows.yml/badge.svg)](https://github.com/CrysoK/Aleph/actions/workflows/test-windows.yml)
 [![doxygen-deploy](https://github.com/CrysoK/Aleph/actions/workflows/doxygen.yml/badge.svg)](https://github.com/CrysoK/Aleph/actions/workflows/doxygen.yml)
