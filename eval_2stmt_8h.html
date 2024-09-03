@@ -134,10 +134,13 @@ Funciones</h2></td></tr>
 <tr class="memitem:a6869f7e84ea2c034d413014c66301293"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2stmt_8h.html#a6869f7e84ea2c034d413014c66301293">eval_insert</a> (AstNode *insert_ast)</td></tr>
 <tr class="separator:a6869f7e84ea2c034d413014c66301293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5142981e46077aabeab0d94d4bf74bc"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2stmt_8h.html#ab5142981e46077aabeab0d94d4bf74bc">eval_if</a> (AstNode *if_ast)</td></tr>
+<tr class="memdesc:ab5142981e46077aabeab0d94d4bf74bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalúa la sentencia <code>if</code>.  <br /></td></tr>
 <tr class="separator:ab5142981e46077aabeab0d94d4bf74bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d5243640642c28a199d5a28ccfdc77"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2stmt_8h.html#ab4d5243640642c28a199d5a28ccfdc77">eval_while</a> (AstNode *while_ast)</td></tr>
+<tr class="memdesc:ab4d5243640642c28a199d5a28ccfdc77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalúa la sentencia <code>while</code>.  <br /></td></tr>
 <tr class="separator:ab4d5243640642c28a199d5a28ccfdc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe17381c840186e11abd9b0d2344f54"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2stmt_8h.html#aafe17381c840186e11abd9b0d2344f54">eval_for</a> (AstNode *for_ast)</td></tr>
+<tr class="memdesc:aafe17381c840186e11abd9b0d2344f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalúa la sentencia <code>for</code>.  <br /></td></tr>
 <tr class="separator:aafe17381c840186e11abd9b0d2344f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993e6b4463a488a9dd44d3e0cb37a7ef"><td class="memItemLeft" align="right" valign="top">ResNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eval_2stmt_8h.html#a993e6b4463a488a9dd44d3e0cb37a7ef">eval_fndef</a> (AstNode *fn_def_ast)</td></tr>
 <tr class="memdesc:a993e6b4463a488a9dd44d3e0cb37a7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalúa la definición de una función.  <br /></td></tr>
@@ -164,7 +167,7 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00541">541</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00596">596</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -184,7 +187,7 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00552">552</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00607">607</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -204,7 +207,7 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00561">561</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00616">616</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -224,7 +227,7 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00570">570</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00625">625</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -307,7 +310,7 @@ Funciones</h2></td></tr>
 <p>Evalúa una asignación. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assign_ast</td><td>Puntero al AST de la asignación. </td></tr>
+    <tr><td class="paramname">assign_ast</td><td>AST de la asignación. </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,7 +318,7 @@ Funciones</h2></td></tr>
 <p>La asignación tiene la forma: </p><pre class="fragment">assignable_list assign_op expr_list
 </pre> <dl class="section note"><dt>Nota</dt><dd>Las asignaciones previas no se deshacen en caso de error. Deberían deshacerse? Cómo?</dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00202">202</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00201">201</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -335,7 +338,7 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00378">378</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00375">375</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -355,7 +358,17 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00409">409</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p>Evalúa la sentencia <code>if</code>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">if_ast</td><td>AST de la sentencia <code>if</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>NULL</code>, <code><a class="el" href="structResErrorN.html" title="Nodo para errores durante la evaluación.">ResErrorN</a></code> o alguna interrupción.</dd></dl>
+<p>Primero se evalúa la condición fuera del alcance del bloque. Su resultado se convierte a un valor lógico (var <a class="el" href="eval_2expr_8c.html#aa8f9dca31aeb4cc900d6082317a9e357">bool_cast</a>). Se crea el alcance para el bloque, se evalúa la lista de sentencias correspondiente al valor lógico y se abandona el alcance creado. Finalmente se devuelve el resultado, que podría ser <code>NULL</code>, un error o alguna interrupción (<code>return</code>, <code>break</code>, <code>continue</code>, <code>exit</code>). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00413">413</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -375,7 +388,24 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00427">427</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p>Evalúa la sentencia <code>while</code>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">while_ast</td><td>AST de la sentencia <code>while</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>NULL</code>, <code><a class="el" href="structResErrorN.html" title="Nodo para errores durante la evaluación.">ResErrorN</a></code> o alguna interrupción.</dd></dl>
+<p>El primer paso es evaluar la condición y obtener su valor lógico (ver <a class="el" href="eval_2expr_8c.html#aa8f9dca31aeb4cc900d6082317a9e357">bool_cast</a>). Si es falso, el ciclo se detiene y se devuelve <code>NULL</code> indicando que no hubo interrupciones ni errores. SI es verdadero, se crea el alcance del bloque y se evalúa la lista de sentencias. Al terminar, se elimina el alcance creado y se analiza el resultado.</p>
+<ul>
+<li>Si la lista de sentencias devuelve <code>NULL</code>, no hubo errores ni interrupciones, por lo que el ciclo continúa.</li>
+<li>Si devuelve un error, el ciclo se detiene y el error se propaga al exterior.</li>
+<li>Si devuelve un <code>break</code> entonces se libera, para evitar que afecte a ciclos exteriores, y el ciclo se detiene.</li>
+<li>Si devuelve un <code>return</code> o <code>exit</code>, el ciclo se detiene y el resultado se propaga al exterior. <code>return</code> debe detener la ejecución de la función que "envuelve" al ciclo y <code>exit</code> debe detener la ejecución de todo el programa.</li>
+<li>En cualquier otro caso, incluyendo <code>continue</code>, se libera el resultado y se pasa a la siguiente iteración. </li>
+</ul>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00449">449</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -395,7 +425,25 @@ Funciones</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00473">473</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+<p>Evalúa la sentencia <code>for</code>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">for_ast</td><td>AST de la sentencia <code>for</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><code>NULL</code>, <code><a class="el" href="structResErrorN.html" title="Nodo para errores durante la evaluación.">ResErrorN</a></code> o alguna interrupción.</dd></dl>
+<p>La sentencia tiene la forma: </p><pre class="fragment">for id in iter block
+    a     b    c
+</pre><p> Para comenzar, se evalúa la expresión que resultará en una lista o un conjunto de elementos para recorrer y se verifica que efectivamente sea un iterable.</p>
+<p>Puede ocurrir que no sea referenciado en ningún lugar fuera del encabezado del <code>for</code>, por lo que se incrementa su <code>refcnt</code> para evitar que sus elementos sean liberados al final de cada iteración.</p>
+<p>Antes de evaluar la lista de sentencias se crea un nuevo alcance.</p>
+<p>Si el iterable es una lista, se declara un símbolo especial <code>_i</code> con el índice del elemento actual.</p>
+<p>Se crea el símbolo con el elemento actual y se evalúa el cuerpo del <code>for</code>. Al terminar, se elimina el alcance del bloque.</p>
+<p>El análisis del resultado es exactamente igual al de <a class="el" href="eval_2stmt_8c.html#ab4d5243640642c28a199d5a28ccfdc77">eval_while</a>.</p>
+<p>Antes de finalizar el <code>for</code> se decrementa el <code>refcnt</code> del iterable y se libera si no posee más referencias. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00520">520</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>
@@ -424,8 +472,11 @@ Funciones</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd><code>NULL</code> o <code><a class="el" href="structResErrorN.html" title="Nodo para errores durante la evaluación.">ResErrorN</a></code>.</dd></dl>
 <p>La sentencia tiene la forma: </p><pre class="fragment">fn id(params) block
-</pre> 
-<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00531">531</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
+</pre><p> La evaluación es simplemente declarar un símbolo con el identificador de la función y asignarle como valor un dato de tipo <code>fn</code>, que no es más que un "envoltorio" para el AST de la definición.</p>
+<p>Si el agregado del símbolo falla, se libera el dato de tipo <code>fn</code> y se propaga el error.</p>
+<p>Para llamadas ver <a class="el" href="eval_2expr_8c.html#a47e935d5fed920cf54d4a393db1157bc" title="Evalúa una llamada a una función.">eval_fncall()</a>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="eval_2stmt_8c_source.html#l00586">586</a> del archivo <a class="el" href="eval_2stmt_8c_source.html">stmt.c</a>.</p>
 
 </div>
 </div>

@@ -6,7 +6,7 @@ var dir_5081caf4253f166c37035217032e821c =
     [ "error.h", "error_8h.html", "error_8h" ],
     [ "eval.c", "eval_8c_source.html", null ],
     [ "eval.h", "eval_8h_source.html", null ],
-    [ "expr.c", "eval_2expr_8c_source.html", null ],
+    [ "expr.c", "eval_2expr_8c.html", "eval_2expr_8c" ],
     [ "expr.h", "eval_2expr_8h.html", "eval_2expr_8h" ],
     [ "ifn.c", "eval_2ifn_8c_source.html", null ],
     [ "ifn.h", "eval_2ifn_8h_source.html", null ],
