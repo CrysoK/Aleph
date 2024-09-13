@@ -34,8 +34,61 @@ Clona o descarga el repositorio. Luego ejecuta el comando del archivo
 Si se modifican los archivos
 [`scanner.l`](https://github.com/CrysoK/Aleph/blob/main/src/flex/scanner.l) o
 [`parser.y`](https://github.com/CrysoK/Aleph/blob/main/src/bison/parser.y) se
-debe ejecutar `flex` o `bison` respectivamente. Para facilitar la compilación se
-puede usar `make`.
+debe ejecutar `flex` o `bison` respectivamente.
+
+Para facilitar la compilación se puede usar `make`.
+
+## Uso
+
+### REPL
+
+Por defecto se usa el modo REPL (Read-Eval-Print Loop). Permite escribir el
+código directamente en la consola y ejecutarlo al presionar `Enter`.
+
+### Archivo
+
+Para ejecutar el contenido de un archivo se debe indicar la ruta (absoluta o
+relativa) del mismo al final de los argumentos del intérprete.
+
+```bash
+aleph.exe otros_argumentos archivo
+```
+
+### Visualización
+
+La opción `-g` permite visualizar el AST con todas las sentencias ejecutadas una
+vez que el intérprete finaliza.
+
+En principio se genera un archivo `.dot` con la descripción del AST en lenguaje
+[DOT](https://graphviz.org/doc/info/lang.html). Si
+[Graphviz](https://graphviz.org/download) está instalado y accesible en el
+`PATH`, se usa para crear una imagen en formato `.png`. También se puede usar el
+contenido del archivo `.dot` en algún intérprete online como
+[este](https://edotor.net/) o
+[este](https://dreampuf.github.io/GraphvizOnline/).
+
+Por ejemplo, para el código:
+
+```js
+let a = -5
+a + 48/6 * (15 + 5)
+```
+
+Se genera el AST:
+
+![ast](doc/ast.png)
+
+### Otras opciones
+
+- `-h` Muestra un mensaje de ayuda con las opciones disponibles.
+- `-c` Deshabilita el color en los mensajes de error y depuración.
+- `-d MODOS` Establece los modos de depuración. `MODOS` puede contener:
+  - `e` Muestra dónde se crean los mensajes de error.
+  - `i` Activa mensajes de depuración del intérprete.
+  - `b` Activa la depuración incluida en Bison.
+- `-t N` Establece la capacidad máxima de la tabla de símbolos.
+- `-s N` Establece la cantidad máxima de "scopes" activos a la vez.
+- `-p F` Convierte el AST de vuelta a código y lo guarda en `F` (no implementado).
 
 ## Ejemplos
 
@@ -47,7 +100,7 @@ print("Hola mundo!")
 ```rust
 // Funciones recursivas
 fn Fib(n) {
-  if n <= 1 { return n }
+  if n <= 1 { return n }\
   else { return Fib(n - 2) + Fib(n - 1) }
 }
 println(Fib(20))
@@ -57,9 +110,7 @@ println(Fib(20))
 // Funciones como argumento
 fn map(f, iter) {
   let new = []
-  for e in iter {
-    new += [f(e)]
-  }
+  for e in iter { new += [f(e)] }
   return new
 }
 fn doble(elem) { return elem * 2 }

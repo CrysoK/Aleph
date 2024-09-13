@@ -6,4 +6,4 @@
 *.png
 doc/doxygen/html/*
 !doc/doxygen/html/.gitkeep
-doc/latex
+!doc/*.png
