@@ -4,7 +4,8 @@
  *
  * Este archivo contiene el análisis de argumentos, la configuración y la
  * ejecución del intérprete.
-*/
+ */
+#define ALEPH_VERSION "0.2.0"
 
 #include <getopt.h>
 #include <stdlib.h> // Macros EXIT
@@ -129,6 +130,7 @@ void print_help(void) {
   printf("Si no se indica un archivo, se ejecuta en modo interactivo (REPL)\n");
   printf("Opciones:\n");
   printf("-h Muestra este mensaje de ayuda.\n");
+  printf("-v Muestra la versión de Aleph.\n");
   printf("-c Desactiva el color en mensajes de error y depuración.\n");
   printf("-d MODOS Establece los modos de depuración:\n");
   printf("    -d e Muestra dónde se crean los mensajes de error.\n");
@@ -149,7 +151,7 @@ void print_help(void) {
 int args_parse(int argc, char *argv[], bool *graph) {
   int opt = 0;
   opterr = 0; // desactiva mensajes de error por defecto
-  while((opt = getopt(argc, argv, "d:t:s:gp:hc")) != -1) {
+  while((opt = getopt(argc, argv, "d:t:s:gp:hcv")) != -1) {
     switch(opt) {
       case 'd':
         if(!set_debug_mode(optarg)) goto error;
@@ -174,6 +176,9 @@ int args_parse(int argc, char *argv[], bool *graph) {
       case 'c':
         g_color = false;
         break;
+      case 'v':
+        printf("Aleph v%s\n", ALEPH_VERSION);
+        return EXIT_SUCCESS;
       default:
         error:
         print_error("CLI", "Argumento inválido. Usa -h para más información.");
