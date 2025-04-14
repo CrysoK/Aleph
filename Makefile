@@ -39,6 +39,9 @@ C_ARGS = -std=c11 -O2 -pedantic -Wall -Wextra -Wno-unused-function \
 debug: C_ARGS += -g -fno-inline -fno-omit-frame-pointer -ggdb # Dr. Memory
 debug: $(PROGRAM)
 
+32bit: C_ARGS += -m32 -static
+32bit: $(PROGRAM)
+
 $(PROGRAM): $(C_FILES) $(H_FILES) $(FLEX_C) $(BISON_C)
 	gcc $(C_ARGS) $(C_FILES) $(FLEX_C) $(BISON_C) -o $@
 	echo gcc $(C_ARGS) $(C_FILES) $(FLEX_C) $(BISON_C) -o $@ > _gcc.cmd
